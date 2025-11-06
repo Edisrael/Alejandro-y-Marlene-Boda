@@ -167,101 +167,55 @@ document.getElementById("form")?.addEventListener("submit", async function(e){
 
 
 
-// ==== MODAL MAPA CON PIN (Leaflet + OSM, sin API key) ====
-
-// Cargador dinámico de librerías
-function loadJS(src){ return new Promise((res,rej)=>{ const s=document.createElement('script'); s.src=src; s.onload=res; s.onerror=rej; document.head.appendChild(s); });}
-function loadCSS(href){ return new Promise((res,rej)=>{ const l=document.createElement('link'); l.rel='stylesheet'; l.href=href; l.onload=res; l.onerror=rej; document.head.appendChild(l); });}
-
-async function ensureLeaflet(){
-  if (window.L && L.map) return;
-  await loadCSS('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
-  await loadJS('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js');
-}
-
-// Geocodificar dirección → coords (Nominatim)
-async function geocodeAddress(address){
-  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`;
-  const resp = await fetch(url, { headers: { 'Accept':'application/json' }});
-  if (!resp.ok) throw new Error('Geocoding failed');
-  const data = await resp.json();
-  if (!data || !data.length) throw new Error('No results');
-  return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
-}
-
-document.addEventListener('click', async (e) => {
-  const btn = e.target.closest('.btn-ubicacion');
+// ==== MODAL CON MAPA GOOGLE (CON PIN) ====
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".btn-ubicacion");
   if (!btn) return;
 
-  const address = btn.dataset.address || '';
-  const label   = btn.dataset.label || 'Ubicación';
-  let lat = btn.dataset.lat ? parseFloat(btn.dataset.lat) : null;
-  let lng = btn.dataset.lng ? parseFloat(btn.dataset.lng) : null;
+  const lat = btn.dataset.lat || "";
+  const lng = btn.dataset.lng || "";
+  const label = btn.dataset.label || "Ubicación";
+  const address = btn.dataset.address || "";
 
-  try{
-    // 1) Obtener coords si solo hay address
-    if ((!lat || !lng) && address){
-      const pt = await geocodeAddress(address);
-      lat = pt.lat; lng = pt.lng;
-    }
-
-    // 2) Abrir modal SweetAlert2 con contenedor para Leaflet
-    if (typeof Swal === 'undefined') { 
-      alert('Mapa: faltó SweetAlert2'); 
-      return; 
-    }
-    await Swal.fire({
-      title: label,
-      html: `
-        <div id="swal-map" style="
-          width:100%;
-          max-width:800px;
-          aspect-ratio: 16/9;
-          margin:0 auto;
-          border-radius:12px;
-          overflow:hidden;
-        "></div>
-      `,
-      showCloseButton: true,
-      showConfirmButton: false,
-      width: 'min(95vw, 860px)',
-      didOpen: async () => {
-        // 3) Cargar Leaflet si hace falta e inicializar mapa con pin
-        await ensureLeaflet();
-
-        const mapEl = document.getElementById('swal-map');
-        const map = L.map(mapEl, { zoomControl: true });
-
-        // Capa base OSM
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 19,
-          attribution: '&copy; OpenStreetMap'
-        }).addTo(map);
-
-        // Si hay coords válidas, centra y agrega marker
-        if (typeof lat === 'number' && typeof lng === 'number'){
-          const center = [lat, lng];
-          map.setView(center, 15);
-          L.marker(center).addTo(map).bindPopup(label).openPopup();
-        } else if (address){
-          // Fallback: si no hubo coords, haz un fit al mundo (sin marker)
-          map.setView([0,0], 1);
-        }
-
-        // Arreglo de tamaño al animar modal
-        setTimeout(()=> map.invalidateSize(), 100);
-      },
-      background: '#fff',
-      backdrop: 'rgba(0,0,0,0.6)'
-    });
-
-  } catch(err){
-    console.error('Mapa modal error:', err);
-    // Fallback muy básico
-    if (address){
-      window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`, '_blank','noopener,noreferrer');
-    } else {
-      alert('No fue posible mostrar el mapa.');
-    }
+  // Si hay coordenadas, usamos el formato con marcador
+  let mapaEmbed = "";
+  if (lat && lng) {
+    mapaEmbed = `https://www.google.com/maps?q=${lat},${lng}&hl=es&z=16&output=embed`;
+  } else if (address) {
+    mapaEmbed = `https://www.google.com/maps?q=${encodeURIComponent(address)}&hl=es&z=16&output=embed`;
+  } else {
+    Swal.fire("Sin ubicación", "Falta dirección o coordenadas.", "info");
+    return;
   }
+
+  Swal.fire({
+    title: label,
+    html: `
+      <div style="
+        width:100%;
+        max-width:700px;
+        aspect-ratio:16/9;
+        margin:auto;
+        border-radius:15px;
+        overflow:hidden;
+        box-shadow:0 0 10px rgba(0,0,0,0.2);
+      ">
+        <iframe
+          src="${mapaEmbed}"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    `,
+    showCloseButton: true,
+    showConfirmButton: false,
+    width: "min(95vw, 800px)",
+    background: "#fff",
+    backdrop: "rgba(0,0,0,0.6)",
+  });
 });
+

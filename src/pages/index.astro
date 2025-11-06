@@ -1,129 +1,221 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Invitación de Boda</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/boda.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Invitación de Boda</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, viewport-fit=cover"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/styles/boda.css" />
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+		<script type="module" src="/scripts/boda.js"></script>
+	</head>
 
-  <body>
-    <main>
+	<body>
+		<main>
+			<!-- 1. Inicio -->
+			<section id="inicio" class="fade-zoom portada">
+				<div class="tarjeta">
+					<img
+						src="/img/tulipanes_v.png"
+						alt="Decoración tulipanes"
+						class="fondo"
+					/>
+					<div class="contenido">
+						<p>
+							"A veces lo que empieza como una locura se convierte
+							en lo mejor de tu vida"
+						</p>
+						<br /><br />
+						<dir>
+							<h1
+								data-typer
+								data-text="Alejandro\n\n&\n\nMarlene"
+							>
+							</h1>
+						</dir>
+						<br /><br />
+						<p>Nos complace invitarte a Nuestra Boda</p>
+						<br /><br />
+						<button data-target="ceremonia">Ver más</button>
+					</div>
+				</div>
+			</section>
 
-      <!-- 1. Inicio -->
-      <section id="inicio" class="fade-zoom portada">
-        <div class="tarjeta">
-          <img src="/img/tulipanes_v.png" alt="Decoración tulipanes" class="fondo" />
-          <div class="contenido">
-            <h1>"A veces lo que empieza como una locura se convierte en lo mejor de tu vida"</h1>
-            <p>Marlene & Alejandro</p>
-            <h1>Nos complace invitarte a Nuestra Boda</h1>
-            <button data-target="ceremonia">Ver más</button>
-          </div>
-        </div>
-      </section>
+			<!-- 2. Ceremonia -->
+			<section id="ceremonia" class="fade-zoom portada">
+				<div class="tarjeta">
+					<img
+						src="/img/tulipanes_v.png"
+						alt="Decoración tulipanes"
+						class="fondo"
+					/>
+					<div class="contenido">
+						<p>
+							Estaremos felices que nos acompañes en nuestra
+							ceremonia
+						</p>
+						<br /><br />
+						<h1 data-typer data-text="Enero 17"></h1>
+						<br />
+						<p>2025</p>
+						<p>a las</p>
+						<br />
+						<h1 data-typer data-text="\n15:00 hrs"></h1>
+						<br /><br />
+						<button class="btn-ubicacion"
+        data-lat="19.4326077"
+        data-lng="-99.133208"
+        data-label="Salón Mari Angélica">
+  Ubicación
+</button>
+						<button data-target="recepcion">Ver más</button>
+					</div>
+				</div>
+			</section>
 
-      <!-- 2. Ceremonia -->
-      <section id="ceremonia" class="fade-zoom portada">
-        <div class="tarjeta">
-          <img src="/img/tulipanes_v.png" alt="Decoración tulipanes" class="fondo" />
-          <div class="contenido">
-            <h2>Estaremos felices que nos acompañes en nuestra ceremonia</h2>
-            <h2>Enero 17</h2>
-            <h4>2025</h4>
-            <h4>a las</h4>
-            <h4>15:00 hrs</h4>
-            <button data-target="recepcion">Ver más</button>
-          </div>
-        </div>
-      </section>
+			<!-- 3. Recepción -->
+			<section id="recepcion" class="fade-zoom portada">
+				<div class="tarjeta">
+					<img
+						src="/img/tulipanes_v.png"
+						alt="Decoración tulipanes"
+						class="fondo"
+					/>
+					<div class="contenido">
+						<p>
+							Posterior a la ceremonia te invitamos a nuestra
+							recepción en el salón de eventos
+						</p>
+						<br /><br />
+						<h1 data-typer data-text="Salón Mari Angelica"></h1>
+						<br />
+						<p>a las</p>
+						<b></b>
+						<h1 data-typer data-text="18:00 hrs"></h1>
+						<br /><br />
+						<button>Ubicacion</button>
+						<button data-target="faltan">Ver más</button>
+					</div>
+				</div>
+			</section>
 
-      <!-- 3. Recepción -->
-      <section id="recepcion" class="fade-zoom portada">
-        <div class="tarjeta">
-          <img src="/img/tulipanes_v.png" alt="Decoración tulipanes" class="fondo" />
-          <div class="contenido">
-            <p>Posterior a la ceremonia te invitamos a nuestra recepción en el salón de eventos</p>
-            <h1>Salón Mari Angelica</h1>
-            <p>a las</p>
-            <h1>18:00 hrs</h1>
-            <button data-target="faltan">Ver más</button>
-          </div>
-        </div>
-      </section>
+			<!-- 4. Faltan -->
+			<section id="faltan" class="fade-zoom portada">
+				<div class="tarjeta">
+					<img
+						src="/img/tulipanes_v.png"
+						alt="Decoración tulipanes"
+						class="fondo"
+					/>
+					<div class="contenido">
+						<h2>Faltan</h2>
+						<p>horas</p>
+						<button data-target="regalos">Ver más</button>
+					</div>
+				</div>
+			</section>
 
-      <!-- 4. Faltan -->
-      <section id="faltan" class="fade-zoom portada">
-        <div class="tarjeta">
-          <img src="/img/tulipanes_v.png" alt="Decoración tulipanes" class="fondo" />
-          <div class="contenido">
-            <h2>Faltan</h2>
-            <p>horas</p>
-            <button data-target="regalos">Ver más</button>
-          </div>
-        </div>
-      </section>
+			<!-- 5. Regalos y Dresscode -->
+			<section id="regalos" class="fade-zoom portada">
+				<div class="tarjeta">
+					<img
+						src="/img/tulipanes_v.png"
+						alt="Decoración tulipanes"
+						class="fondo"
+					/>
+					<div class="contenido">
+						<h2 data-typer data-text="¿Regalos?">¿Regalos?</h2>
+						<br />
+						<p>
+							Tu presencia siempre será el mejor regalo, pero si
+							deseas hacernos un regalo adicional contaremos con
+							sobres en el evento para cartas, dinero y buenos
+							deseos.
+						</p>
+						<br />
+						<h2 data-typer data-text="Dresscode"></h2>
+						<br />
+						<p>Formal.</p>
+						<p>
+							¡Queremos tu mejor perfil para el álbum de
+							recuerdos!
+						</p>
+						<br /><br />
+						<button data-target="fotos">Ver más</button>
+					</div>
+				</div>
+			</section>
 
-      <!-- 5. Regalos y Dresscode -->
-      <section id="regalos" class="fade-zoom portada">
-        <div class="tarjeta">
-          <img src="/img/tulipanes_v.png" alt="Decoración tulipanes" class="fondo" />
-          <div class="contenido">
-            <h2>¿Regalos?</h2>
-            <p>
-              Tu presencia siempre será el mejor regalo, pero si deseas hacernos un regalo adicional
-              contaremos con sobres en el evento para cartas, dinero y buenos deseos.
-            </p>
-            <h2>Dresscode</h2>
-            <p>Formal.</p>
-            <p>¡Queremos tu mejor perfil para el álbum de recuerdos!</p>
-            <button data-target="fotos">Ver más</button>
-          </div>
-        </div>
-      </section>
+			<!-- 6. Fotos -->
+			<section id="fotos" class="fade-zoom portada">
+				<div class="tarjeta">
+					<img
+						src="/img/tulipanes_v.png"
+						alt="Decoración tulipanes"
+						class="fondo"
+					/>
+					<div class="contenido">
+						<h2>Foto Marlene y Duyran</h2>
+						<button data-target="esperamos">Ver más</button>
+					</div>
+				</div>
+			</section>
 
-      <!-- 6. Fotos -->
-      <section id="fotos" class="fade-zoom portada">
-        <div class="tarjeta">
-          <img src="/img/tulipanes_v.png" alt="Decoración tulipanes" class="fondo" />
-          <div class="contenido">
-            <h2>Foto Marlene y Duyran</h2>
-            <button data-target="esperamos">Ver más</button>
-          </div>
-        </div>
-      </section>
+			<!-- 7. Te esperamos -->
+			<section id="esperamos" class="fade-zoom portada">
+				<div class="tarjeta">
+					<img
+						src="/img/tulipanes_v.png"
+						alt="Decoración tulipanes"
+						class="fondo"
+					/>
+					<div class="contenido">
+						<h2 data-typer data-text="Te esperamos"></h2>
+						<p>Foto Marlene y Duran</p>
+						<button data-target="confirmacion"
+							>Confirmar tu asistencia</button
+						>
+					</div>
+				</div>
+			</section>
 
-      <!-- 7. Te esperamos -->
-      <section id="esperamos" class="fade-zoom portada">
-        <div class="tarjeta">
-          <img src="/img/tulipanes_v.png" alt="Decoración tulipanes" class="fondo" />
-          <div class="contenido">
-            <h2>Te esperamos</h2>
-            <p>Foto Marlene y Duran</p>
-            <button data-target="confirmacion">Confirmar asistencia</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- 8. Confirmación -->
-      <section id="confirmacion" class="fade-zoom portada">
-        <div class="tarjeta">
-          <img src="/img/tulipanes_v.png" alt="Decoración tulipanes" class="fondo" />
-          <div class="contenido">
-            <h2>Confirma tu asistencia ❤️</h2>
-            <form id="form">
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
-              <button type="submit">Confirmar</button>
-            </form>
-            <p id="respuesta"></p>
-            <button data-target="inicio" style="margin-top: 20px;">Volver al inicio</button>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <script type="module" src="/scripts/boda.js"></script>
-  </body>
+			<!-- 8. Confirmación -->
+			<section id="confirmacion" class="fade-zoom portada">
+				<div class="tarjeta">
+					<img
+						src="/img/tulipanes_v.png"
+						alt="Decoración tulipanes"
+						class="fondo"
+					/>
+					<div class="contenido">
+						<h2>Confirma tu asistencia ❤️</h2>
+						<form id="form">
+							<input
+								type="text"
+								id="nombre"
+								name="nombre"
+								placeholder="Tu nombre completo"
+								required
+							/>
+							<button type="submit">Confirmar</button>
+						</form>
+						<p id="respuesta"></p>
+						<button data-target="inicio" style="margin-top: 20px;"
+							>Volver al inicio</button
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+	</body>
 </html>

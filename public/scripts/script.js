@@ -52,14 +52,47 @@ Pace.on('done', function () {
 /* 2. Countdown
  /* ----------------------------------------------- */
 
-$('#clock').countdown('2017/03/16').on('update.countdown', function (event) {
-    var $this = $(this).html(event.strftime(''
-            + '<span class="wraper-clock"><div class="value">%D</div><div class="value-label">Days</div></span><span class="sep">:</span>'
-            + '<span class="wraper-clock"><div class="value">%H</div><div class="value-label">Hours</div></span><span class="sep">:</span>'
-            + '<span class="wraper-clock"><div class="value">%M</div><div class="value-label">Minutes</div></span><span class="sep">:</span>'
-            + '<span class="wraper-clock"><div class="value">%S</div><div class="value-label">Seconds</div></span>'
-            ));
-});
+(function setupCountdown() {
+  var clock = document.getElementById("clock");
+  if (!clock) return;
+
+  // Fecha objetivo
+  var target = new Date("2026-01-17T15:00:00").getTime();
+
+  function render() {
+    var now = Date.now();
+    var diff = target - now;
+    if (diff < 0) diff = 0;
+
+    var totalSec = Math.floor(diff / 1000);
+    var days = Math.floor(totalSec / 86400);
+    var hours = Math.floor((totalSec % 86400) / 3600);
+    var minutes = Math.floor((totalSec % 3600) / 60);
+    var seconds = totalSec % 60;
+
+    clock.innerHTML =
+      '<span class="wraper-clock letraPrincipal">' +
+        '<div class="value personalColorTitutlo letraPrincipal">' + days + '</div>' +
+        '<div class="value-label letraPrincipal">Días</div>' +
+      '</span><span class="sep">:</span>' +
+      '<span class="wraper-clock letraPrincipal">' +
+        '<div class="value personalColorTitutlo letraPrincipal">' + String(hours).padStart(2, "0") + '</div>' +
+        '<div class="value-label letraPrincipal">Horas</div>' +
+      '</span><span class="sep">:</span>' +
+      '<span class="wraper-clock letraPrincipal">' +
+        '<div class="value personalColorTitutlo letraPrincipal">' + String(minutes).padStart(2, "0") + '</div>' +
+        '<div class="value-label letraPrincipal">Minutos</div>' +
+      '</span><span class="sep">:</span>' +
+      '<span class="wraper-clock letraPrincipal">' +
+        '<div class="value personalColorTitutlo letraPrincipal">' + String(seconds).padStart(2, "0") + '</div>' +
+        '<div class="value-label letraPrincipal">Segundos</div>' +
+      '</span>';
+  }
+
+  render();
+  setInterval(render, 1000);
+})();
+
 
 /* ----------------------------------------------- */
 /* 3. Image Hover Effect

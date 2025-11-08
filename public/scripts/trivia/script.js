@@ -39,6 +39,7 @@ $(function(){
 
 
 
+
 function resize_to_fit_preg(pregunta) {		
   var pregText =  $(pregunta).find(".cont-pregunta");
   var fontsize = $(pregunta).find(".cont-pregunta").css('font-size');

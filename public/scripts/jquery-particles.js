@@ -26,4 +26,4 @@
     }
 }
 )(window);
-//# sourceMappingURL=jquery.particles.min.js.map
+

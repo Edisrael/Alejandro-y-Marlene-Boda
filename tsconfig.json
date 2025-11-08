@@ -1,5 +1,5 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
+  "include": [".astro/types.d.ts", "**/*", "public/scripts/trivia/jquery-3.6.0.min.js", "public/scripts/bootstrap.min.js", "public/scripts/jquery.validate.min.js"],
   "exclude": ["dist"]
 }

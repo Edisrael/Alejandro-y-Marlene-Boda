@@ -1,216 +1,1983 @@
 <!doctype html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Invitación de Boda</title>
+<html
+	lang="es"
+	class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths desktop landscape"
+>
+	<head
+		><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- <meta name="viewport" content="width=480"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="Invitaciones para eventos" />
+
+		<meta property="og:type" content="website" />
 		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, viewport-fit=cover"
+			property="og:title"
+			content="- Nuestra Boda - - Marisa & Daniel"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="/styles/boda.css" />
-		<script
-			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+
+		<meta property="og:description" content="- Nuestra Boda -" />
+		<meta property="og:url" content="" />
+		<!-- <meta property="og:description" content="" />		 -->
+		<meta property="og:image" content="/img/IMG-OGmini.jpg" />
+		<meta property="og:image:width" content="709" />
+		<meta property="og:image:height" content="709" />
+
+
+		<script src="/scripts/trivia/jquery-3.6.0.min.js" type="text/javascript"
 		></script>
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
-		<script type="module" src="/scripts/boda.js"></script>
+		<script src="/scripts/bootstrap.min.js" type="text/javascript"></script>
+
+		<link type="image/x-icon" rel="shortcut icon" href="/img/favicon.png" />
+
+		<!-- preguntame-->
+		<script src="/scripts/confetti.browser.js" type="text/javascript"
+		></script>
+		<link rel="stylesheet" href="/styles/font-awesome_all.min.css" />
+		<!-- Google fonts include -->
+
+		<!-- Bootstrap-css include -->
+		<link rel="stylesheet" href="/styles/trivia/bootstrap.min.css" />
+		<!-- Animate-css include -->
+		<link rel="stylesheet" href="/styles/trivia/animate.min.css" />
+		<!-- Main-StyleSheet include -->
+		<link rel="stylesheet" href="/styles/trivia/style.css" />
+		<link rel="stylesheet" href="/styles/trivia/estilos.css" />
+
+		<link
+			rel="stylesheet"
+			href="/styles/venobox.min.css"
+			type="text/css"
+			media="screen"
+		/>
+
+		<style type="text/css">
+			@font-face {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 400;
+				src: url(/cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.woff2);
+				unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
+					U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
+					U+2C60-2C7F, U+A720-A7FF;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 400;
+				src: url(/cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.woff2);
+				unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1,
+					U+2116;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 400;
+				src: url(/cf-fonts/s/roboto/5.0.11/latin/400/normal.woff2);
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC,
+					U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
+					U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+					U+FEFF, U+FFFD;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 400;
+				src: url(/cf-fonts/s/roboto/5.0.11/greek/400/normal.woff2);
+				unicode-range: U+0370-03FF;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 400;
+				src: url(/cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.woff2);
+				unicode-range: U+0102-0103, U+0110-0111, U+0128-0129,
+					U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301,
+					U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9,
+					U+20AB;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 400;
+				src: url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.woff2);
+				unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+					U+A640-A69F, U+FE2E-FE2F;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 400;
+				src: url(/cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.woff2);
+				unicode-range: U+1F00-1FFF;
+				font-display: swap;
+			}
+		</style>
+
+		<link href="/styles/css2.css" rel="stylesheet" />
+
+		<!-- Fonts -->
+		<style>
+			@font-face {
+				font-family: Josefin Slab;
+				src: url("/invitaciones/fonts/theme/46aYWdgz-1oFX11flmyEfS3USBnSvpkopQaUR-2r7iU.ttf");
+			}
+			.modal-audio {
+				padding: 4%;
+				text-align: center;
+			}
+			.modal-audio span {
+				color: black !important;
+			}
+			.modal-audio .btn {
+				border-radius: 10px;
+				margin-top: 3%;
+			}
+			.letraPrincipal {
+				font-family: Norican !important;
+			}
+			.letraSecundaria {
+				font-family: Cinzel !important;
+			}
+		</style>
+
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+		<title>- Nuestra Boda - - Marisa &amp; Daniel</title>
+		<!-- Bootstrap core CSS -->
+		<link
+			href="/styles/trivia/bootstrap.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- Font Awesome -->
+		<link
+			href="/styles/font-awesome.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+        <link href="/invitaciones/css/ie10.css" rel="stylesheet" type="text/css"> -->
+		<!-- flexslider -->
+		<link href="/styles/flexslider.css" rel="stylesheet" type="text/css" />
+		<!-- Magnific Popup core CSS file -->
+		<link
+			href="/styles/magnific-popup.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<!-- animate -->
+		<link href="/styles/animate.css" rel="stylesheet" type="text/css" />
+		<!-- Pace -->
+		<link href="/styles/preloader.css" rel="stylesheet" type="text/css" />
+		<!-- Carousel -->
+		<link
+			href="/styles/owl.carousel.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link href="/styles/style.css" rel="stylesheet" type="text/css" />
+		<!-- AddEvent theme css -->
+		<link
+			rel="stylesheet"
+			href="/styles/theme6.css"
+			type="text/css"
+			media="screen"
+		/>
+
+		<style>
+			.personalColorTitutlo {
+				color: #b78455 !important;
+			}
+			.personalColorFraseLarga {
+				color: #b78455 !important;
+			}
+			.personalColorFraseFinal {
+				color: #ffffff !important;
+			}
+
+			#message::placeholder,
+			#message,
+			#name {
+				color: #ffffff !important;
+				opacity: 1;
+			}
+		</style>
+
+		<style>
+			#qrcode {
+				max-width: 250px;
+				padding: 10px;
+				background-color: rgba(255, 255, 255, 0.7);
+				margin: 0px auto;
+				border-radius: 15px;
+			}
+
+			.sobre {
+				width: 100%;
+				position: relative;
+				bottom: 0px;
+				position: absolute;
+				background: #fafafa;
+				z-index: 99;
+			}
+			.sup {
+				top: 0;
+				height: 60%;
+				border-bottom-right-radius: 15px;
+				border-bottom-left-radius: 15px;
+				border: 2px solid black;
+				box-shadow: 1px 4px 12px #000000b5;
+				z-index: 101;
+			}
+			.sdw {
+				bottom: 0;
+				height: 55%;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px;
+				border: 2px solid black;
+			}
+			.sobreNames {
+				width: 100%;
+				text-align: center;
+				bottom: 100px;
+				position: absolute;
+				font-size: 33px;
+				line-height: 45px;
+			}
+			.sello {
+				text-align: center;
+				bottom: 0%;
+				background: #9e9090;
+				border-radius: 50px;
+				position: absolute;
+				width: 100px;
+				color: white;
+				margin: 0px auto;
+				left: 50%;
+				margin-left: -50px;
+				padding: 20px;
+				margin-bottom: -27px;
+				z-index: 199999;
+			}
+			.mesa {
+				width: 330px;
+				max-width: 330px;
+				margin: 0px auto;
+				position: absolute;
+				z-index: 999;
+				top: 20px;
+				height: 250px;
+				overflow: hidden;
+			}
+			.blackclover {
+				/* border: solid black; */
+				width: 100%;
+				/* background-color: #9E9E9E; */
+				height: 100%;
+				border-top: 230px solid #bcbcbc;
+				position: absolute;
+				z-index: 8;
+				border-bottom: 230px solid #bcbcbc;
+				border-left: 30px solid #bcbcbc;
+				border-right: 30px solid #bcbcbc;
+			}
+		</style>
+		<script type="text/javascript">
+			/*	$(".sello").on('click',function(){
+			$(".sup").slideUp("slow");
+			setTimeout(()=> {
+			$(".sdw").slideUp("slow");
+			$(".blackclover").fadeOut("slow");
+			}
+			,200);
+			
+		});*/
+		</script>
 	</head>
+	<body
+		data-pais="Mexico"
+		id="invitacion"
+		class="body-offcanvas pace-done"
+		data-category="Boda"
+		style="background: #f9f9f9;"
+		data-idpase=""
+		data-slug="boda-marisaydaniel"
+		><div class="pace pace-inactive">
+			<div
+				class="pace-progress"
+				data-progress-text="100%"
+				data-progress="99"
+				style="transform: translate3d(100%, 0px, 0px);"
+			>
+				<div class="pace-progress-inner"></div>
+			</div>
+			<div class="pace-activity"></div>
+		</div>
 
-	<body>
-		<main>
-			<!-- 1. Inicio -->
-			<section id="inicio" class="fade-zoom portada">
-				<div class="tarjeta">
-					<img
-						src="/img/tulipanes_v.png"
-						alt="Decoración tulipanes"
-						class="fondo"
-					/>
-					<div class="contenido">
-						<p>
-							"A veces lo que empieza como una locura se convierte
-							en lo mejor de tu vida"
-						</p>
-						<br /><br />
-						<dir>
+		<!--PRELOADER-->
+		<div id="preloader" style="display: none;" hidden="">
+			<div class="alignment">
+				<div class="v-align center-middle">
+					<!-- <img style="width:100px;" src="/invitaciones/images/load.gif">
+                <div class="strike-1 spinner">
+                    <span>
+                        <i class="glyphicon glyphicon-heart hearticon icon-xl"></i>
+                        <i class="glyphicon glyphicon-heart hearticon-3 icon-xl"></i>
+                    </span>
+                </div>  -->
+				</div>
+			</div>
+		</div>
+		<!--END PRELOADER-->
+
+		<!--- SOBRE ALPHA 
+        <section id="carta">
+            <div class="mesa">
+                <div class="sobre sup">
+                    <div class="sello">Abrir</div></div>
+                    <div class="sobre sdw">	</div>
+                </div>
+            </div>
+        </section>---->
+
+		<!-- HEADER -->
+		<!-- END HEADER -->
+
+		<!-- SLIDER -->
+
+		<!-- Nuevo centrado -->
+
+		<div class="container containerCustom px-0">
+			<div
+				id="homeslider-wrap"
+				class="homesliderimage2"
+				style="height: 84vh; background-image:url('/img/IMAGEN-HEADERportpc.jpg'); display: flex; justify-content: center; align-items: flex-end; background-position: 50% 50%; background-color: #FFF; -webkit-transform: translateZ(0); overflow: hidden;"
+			>
+				<div id="countdown" class="vertical-center countdown-box">
+					<div class="row">
+						<div
+							class="col-md-offset-1 col-md-10 carousel-caption2 animated-element-1 delay1 my-5 animated fadeIn"
+						>
 							<h1
-								data-typer
-								data-text="Alejandro\n\n&\n\nMarlene"
+								class="titprin personalColorTitutlo letraSecundaria"
 							>
+								- Nuestra Boda -
 							</h1>
-						</dir>
-						<br /><br />
-						<p>Nos complace invitarte a Nuestra Boda</p>
-						<br /><br />
-						<button data-target="ceremonia">Ver más</button>
+							<!-- <h1 class="titprin personalColorTitutlo"> - Nuestra Boda -</h1> -->
+							<h2
+								class="margin personalColorTitutlo letraPrincipal"
+							>
+								Marisa &amp; Daniel
+							</h2>
+							<div id="clock" class="personalColorTitutlo">
+								<span class="wraper-clock letraPrincipal"
+									><div
+										class="value personalColorTitutlo letraPrincipal"
+									>
+										1116
+									</div><div
+										class="value-label letraPrincipal"
+									>
+										Días
+									</div></span
+								><span class="sep">:</span><span
+									class="wraper-clock letraPrincipal"
+									><div
+										class="value personalColorTitutlo letraPrincipal"
+									>
+										03
+									</div><div
+										class="value-label letraPrincipal"
+									>
+										Horas
+									</div></span
+								><span class="sep">:</span><span
+									class="wraper-clock letraPrincipal"
+									><div
+										class="value personalColorTitutlo letraPrincipal"
+									>
+										00
+									</div><div
+										class="value-label letraPrincipal"
+									>
+										Minutos
+									</div></span
+								><span class="sep">:</span><span
+									class="wraper-clock letraPrincipal"
+									><div
+										class="value personalColorTitutlo letraPrincipal"
+									>
+										04
+									</div><div
+										class="value-label letraPrincipal"
+									>
+										Segundos
+									</div></span
+								>
+							</div>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</div>
 
-			<!-- 2. Ceremonia -->
-			<section id="ceremonia" class="fade-zoom portada">
-				<div class="tarjeta">
-					<img
-						src="/img/tulipanes_v.png"
-						alt="Decoración tulipanes"
-						class="fondo"
-					/>
-					<div class="contenido">
-						<p>
-							Estaremos felices que nos acompañes en nuestra
-							ceremonia
-						</p>
-						<br /><br />
-						<h1 data-typer data-text="Enero 17"></h1>
-						<br />
-						<p>2025</p>
-						<p>a las</p>
-						<br />
-						<h1 data-typer data-text="\n15:00 hrs"></h1>
-						<br /><br />
-						<button class="btn-ubicacion" data-lat="19.37864802942625"data-lng=" -99.07042620937943"data-label="Salón Mari Angélica">Ubicación</button>
-						<button data-target="recepcion">Ver más</button>
+		<!-- Slider viejo POSICION Y   
+            <div class="container containerCustom px-0">
+                <div id="homeslider-wrap" class="row" style="height:calc(84vh - 90px);">
+                    <div id="countdown" class="vertical-center countdown-box">
+                        <div class="row">
+                            <div class="col-md-10 carousel-caption animated-element-1 delay1" style="width: 100%;"> 
+                                <h1 class="titprin personalColorTitutlo"> - Nuestra Boda -</h1>
+                                <h2 class="margin personalColorTitutlo letraPrincipal">Marisa & Daniel</h2>
+                                                                    <div id="clock" class="personalColorTitutlo"></div>
+                                                            </div>
+                        </div>
+                    </div>  
+                    <ul class="slides animated fadeIn ">
+                            <li class="homesliderimage" style="background-image:url('/invitaciones/admin/imagenes/26476/IMAGEN-HEADERportpc.jpg');"> </li> 
+                    </ul>
+                </div>
+            </div>
+        -->
+
+		<script type="text/javascript">
+			var screenHeight = $(window).height() - 150;
+			$(".screen-adapter").css("height", screenHeight);
+		</script>
+		<!-- END SLIDER-->
+
+		<!-- Tomsom - recibir variables url y crear sección -->
+
+		<style>
+			#invitamePass .datagroup {
+				text-align: left;
+				font-size: 15px;
+				background-color: transparent;
+			}
+			#paseDatos .datagroup {
+				margin-bottom: 30px;
+				margin-top: 14px;
+			}
+			#invitamePass .datagroup div {
+				text-align: left;
+				font-size: 17px !important;
+				font-weight: 600;
+				line-height: 36px;
+				margin-bottom: 10px;
+			}
+			#invitamePass .datagroup label {
+				color: #9e9e9e;
+				font-size: 13px !important;
+			}
+			#invitamePass {
+				font-family: "Roboto" !important;
+			}
+			#qrcode {
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+			}
+			@media screen and (max-width: 768px) {
+				#qrcode {
+					padding: 10px !important;
+				}
+			}
+		</style>
+
+		<!--  FRASEL LARGA SECTION -->
+
+		<section
+			id="FRASELARGA"
+			class="container containerCustom background-cover"
+			style="background-color: #333;background-image: url('/img/FOTO_FRASE_LARGAfrpc.jpg');"
+		>
+			<div class="row">
+				<div
+					class="col-lg-8 col-md-offset-2"
+					style="min-height: 1vh;display: flex; align-items: center;"
+				>
+					<div class="hash-box">
+						<div class="text-center">
+							<h1
+								class="frasesMax letraSecundaria personalColorFraseLarga"
+								style="text-shadow: 0 1px 2px rgba(0,0,0,0.6);"
+							>
+								<br /><br />Prometo amarte ahora <br />y
+								siempre, prometo nunca <br />olvidar que este
+								amor es <br />para toda la vida y lo <br
+								/>afortunados que somos <br />de habernos
+								encontrado.
+							</h1>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
+		<!-- END INSTAGRAM SECTION -->
 
-			<!-- 3. Recepción -->
-			<section id="recepcion" class="fade-zoom portada">
-				<div class="tarjeta">
-					<img
-						src="/img/tulipanes_v.png"
-						alt="Decoración tulipanes"
-						class="fondo"
-					/>
-					<div class="contenido">
-						<p>
-							Posterior a la ceremonia te invitamos a nuestra
-							recepción en el salón de eventos
-						</p>
-						<br /><br />
-						<h1 data-typer data-text="Salón Mari Angelica"></h1>
-						<br />
-						<p>a las</p>
-						<b></b>
-						<h1 data-typer data-text="18:00 hrs"></h1>
-						<br /><br /> 
-						<button class="btn-ubicacion" data-lat="19.36739998256139"data-lng="-99.06982730552224"data-label="Salón Mari Angélica">Ubicación</button>
-						<button data-target="faltan">Ver más</button>
-					</div>
+		<!-- WEDDING SECTION HEADER -->
+		<section
+			class="container containerCustom"
+			style="background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                     
+                        background-color: #f7efe7"
+		>
+			<section id="wedding-header" class="wedding-header-single-page">
+				<div class="text-center">
+					<!-- ICON IMAGE -->
+
+					<!-- TITLE -->
+					<h2
+						class="headline letraPrincipal"
+						style="color: #b78455 !important;"
+					>
+						Dónde &amp; Cuándo<br />
+						<hr />
+						<div style="font-size:25px;">
+							Ceremonia &amp; Recepción
+						</div><style>
+							/* COLOR DE BOTONES DE CEREMONIA */
+							.btn-map,
+							.addeventatc {
+								background: #eadacf !important;
+							}
+						</style>
+						<style>
+							h1.personalColorTitutlo,
+							h2.personalColorTitutlo {
+								color: transparent !important;
+								text-shadow: none !important;
+							}
+						</style>
+					</h2>
 				</div>
 			</section>
+			<!-- END WEDDING SECTION HEADER -->
 
-			<!-- 4. Faltan -->
-			<section id="faltan" class="fade-zoom portada">
-				<div class="tarjeta">
-					<img
-						src="/img/tulipanes_v.png"
-						alt="Decoración tulipanes"
-						class="fondo"
-					/>
-					<div class="contenido">
-						<h2>Faltan</h2>
-						<p>horas</p>
-						<button data-target="regalos">Ver más</button>
+			<!-- Opacidad recuadros -->
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$("#wedding-info .wraper-we letraSecundaria").css(
+						"background-color",
+						"rgba(249, 249, 248, 0.51)",
+					);
+					$("#wedding-info .wraper-we2 letraSecundaria").css(
+						"background-color",
+						"none !important",
+					);
+					$(".otros-hoteles-bk").css(
+						"background-color",
+						"rgba(249, 249, 248, 0.51)",
+					);
+					$(".cbuBox").css("background-color", "none !important");
+				});
+			</script>
+
+			<!-- mapas modales -->
+			<div id="mapa1" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content" style="z-index:999;">
+						<div class="modal-header">
+							<button
+								type="button"
+								class="close"
+								data-dismiss="modal">×</button
+							>
+							<h4 class="modal-title letraSecundaria">
+								<div align="center">
+									Hard Rock <br />Hotel Cancún
+								</div>
+							</h4>
+						</div>
+						<div class="modal-body">
+							<div class="maps">
+								<!-- Tomsom - Mapa por coordenadas -->
+								<iframe
+									class="mapa-pop"
+									src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB1geNxkp_O4NgreB1jwUeAOh2Cu_j7Gjw&q=21.089564274925536,-86.77049278768199"
+									height="300"
+									frameborder="0"
+									style="border:0"
+									allowfullscreen=""></iframe>
+							</div>
+							<h3 class="wed-text"></h3>
+
+							<div class="wed-text">
+								Cuándo: 29 de noviembre de 2025 14:00 hrs.
+							</div>
+							<div class="wed-text">
+								Dirección: Blvd. Kukulcan Km 14, Zona Hotelera,
+								77500 Cancún, Q.R., México
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn letraSecundaria btn-default"
+								data-dismiss="modal">Cerrar</button
+							>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
-			<!-- 5. Regalos y Dresscode -->
-			<section id="regalos" class="fade-zoom portada">
-				<div class="tarjeta">
-					<img
-						src="/img/tulipanes_v.png"
-						alt="Decoración tulipanes"
-						class="fondo"
-					/>
-					<div class="contenido">
-						<h2 data-typer data-text="¿Regalos?">¿Regalos?</h2>
-						<br />
-						<p>
-							Tu presencia siempre será el mejor regalo, pero si
-							deseas hacernos un regalo adicional contaremos con
-							sobres en el evento para cartas, dinero y buenos
-							deseos.
-						</p>
-						<br />
-						<h2 data-typer data-text="Dresscode"></h2>
-						<br />
-						<p>Formal.</p>
-						<p>
-							¡Queremos tu mejor perfil para el álbum de
-							recuerdos!
-						</p>
-						<br /><br />
-						<button data-target="fotos">Ver más</button>
-					</div>
-				</div>
-			</section>
+			<!-- CEREMONIA 3 TOMSOM -->
 
-			<!-- 6. Fotos -->
-			<section id="fotos" class="fade-zoom portada">
-				<div class="tarjeta">
-					<img
-						src="/img/tulipanes_v.png"
-						alt="Decoración tulipanes"
-						class="fondo"
-					/>
-					<div class="contenido">
-						<h2>Foto Marlene y Duyran</h2>
-						<button data-target="esperamos">Ver más</button>
-					</div>
-				</div>
-			</section>
-
-			<!-- 7. Te esperamos -->
-			<section id="esperamos" class="fade-zoom portada">
-				<div class="tarjeta">
-					<img
-						src="/img/tulipanes_v.png"
-						alt="Decoración tulipanes"
-						class="fondo"
-					/>
-					<div class="contenido">
-						<h2 data-typer data-text="Te esperamos"></h2>
-						<p>Foto Marlene y Duran</p>
-						<button data-target="confirmacion"
-							>Confirmar tu asistencia</button
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$(".bgCeremoonias").css(
+						"background-color",
+						"rgba(249, 249, 248, 0.51) !important",
+					);
+				});
+			</script>
+			<!-- end mapas modales -->
+			<!-- THE WEDDING SECTION INFO-->
+			<section id="wedding-info" class="onepage">
+				<div class="">
+					<div
+						class="row"
+						style="width: 100%; margin: auto; justify-content: center;"
+					>
+						<!-- RECEPTION -->
+						<div
+							class="animated animated-element-1 col-md-6 fadeIn margin1 pading-text"
 						>
-					</div>
-				</div>
-			</section>
+							<div
+								class="wraper-we letraSecundaria onepage alturaTarjetas bgCeremoonias"
+								style="color: rgb(16, 16, 16) !important; background-color: rgba(249, 249, 248, 0.51); height: 732.906px;"
+							>
+								<!-- HEADER -->
+								<h3 class="letraSecundaria">
+									<div align="center">
+										Hard Rock <br />Hotel Cancún
+									</div>
+								</h3>
+								<!-- GOOGLE MAP LINK -->
 
-			<!-- 8. Confirmación -->
-			<section id="confirmacion" class="fade-zoom portada">
-				<div class="tarjeta">
+								<!--IMAGE-->
+								<img
+									src="/img/CEREMONIA1-IMGCEREMONIA1-IMGceryrec.jpg"
+									alt="480x320"
+									class="img-responsive center-block fl-wd"
+								/>
+								<!-- SUBHEADER-->
+								<h3 class="wed-text letraSecundaria"></h3>
+
+								<!-- Tomsom - Donde y cuando independiente -->
+								<div class="wed-text">
+									<b>Cuándo: </b> 29 de noviembre de 2025 14:00
+									hrs.
+								</div>
+								<div class="wed-text">
+									<b>Dirección:</b> Blvd. Kukulcan Km 14, Zona
+									Hotelera, 77500 Cancún, Q.R., México
+								</div>
+
+								<div
+									type="button"
+									class="btn-map"
+									data-toggle="modal"
+									data-target="#mapa1"
+								>
+									Ver mapa
+								</div>
+
+								<div class="dropdown calendar-dropdown">
+									<button
+										class="btn-map dropdown-toggle"
+										type="button"
+										data-toggle="dropdown"
+									>
+										Agendar en el calendario
+									</button>
+									<ul
+										class="dropdown-menu"
+										style="display: none;"
+									>
+										<li>
+											<a
+												class="dropdown-item"
+												href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=++Hard+Rock+Hotel+Canc%C3%BAn&dates=20251129T200000Z/20251129T210000Z&details=++Hard+Rock+Hotel+Canc%C3%BAn&location="
+												target="_blank"
+												rel="noopener"
+											>
+												<span
+													class="icon google-icon"
+													aria-hidden="true"
+												>
+													<!-- Google "G" multicolor (SVG fiable) -->
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 533.5 544.3"
+														role="img"
+														aria-label="Google"
+													>
+														<path
+															fill="#4285F4"
+															d="M533.5 278.4c0-17.6-1.5-34.5-4.5-50.9H272v96.4h146.9c-6.3 34.6-24.7 63.9-52.6 83.4v69.4h85.1c49.8-45.9 78.1-113.5 78.1-198.7z"
+														></path>
+														<path
+															fill="#34A853"
+															d="M272 544.3c72.7 0 133.8-24.1 178.5-65.3l-85.1-69.4c-23.6 15.8-54 25.1-93.4 25.1-71.7 0-132.5-48.4-154.2-113.4H36.5v71.3C80.8 484.4 169 544.3 272 544.3z"
+														></path>
+														<path
+															fill="#FBBC05"
+															d="M117.8 321.3c-5.3-15.8-8.3-32.7-8.3-50.3s3-34.5 8.3-50.3V149.4H36.5C13.1 191.9 0 236.5 0 271s13.1 79.1 36.5 121.6l81.3-71.3z"
+														></path>
+														<path
+															fill="#EA4335"
+															d="M272 107.1c39.1 0 74 13.5 101.6 40.1l76.1-76.1C405.4 24.6 344.3 0 272 0 169 0 80.8 59.9 36.5 149.4l81.3 71.3C139.5 155.5 200.3 107.1 272 107.1z"
+														></path>
+													</svg>
+												</span>
+												<span class="label"
+													>Google Calendar</span
+												>
+											</a>
+										</li>
+										<li>
+											<a
+												class="dropdown-item"
+												href="https://invitameok.com/invitaciones/descargar_ics.php?titulo=++Hard+Rock+Hotel+Canc%C3%BAn&descripcion=++Hard+Rock+Hotel+Canc%C3%BAn&lugar=&inicio=2025-11-29+14%3A00%3A00&fin=2025-11-29+15%3A00%3A00&zona=America%2FMexico_City"
+												target="_blank"
+												rel="noopener"
+											>
+												<span
+													class="icon apple-icon"
+													aria-hidden="true"
+												>
+													<!-- Apple logo oficial -->
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 384 512"
+														role="img"
+														aria-label="Apple"
+													>
+														<path
+															d="M318.7 268.7c-.2-37.2 16.4-65.4 50-85.8
+                                                                    -18.8-26.9-46.7-41.7-83.9-44.4
+                                                                    -35.3-2.6-74.2 20.8-88.1 20.8
+                                                                    -14.4 0-48.2-20.1-74.7-19.5
+                                                                    -77.3 1.2-127.1 67.6-127.1 140.3
+                                                                    0 59.4 22.6 122.8 50.6 163.2
+                                                                    23.5 33.8 51.3 71.8 88.1 70.4
+                                                                    34.9-1.4 48.1-22.7 90.2-22.7
+                                                                    41.6 0 53.7 22.7 90.5 22
+                                                                    37.6-.6 61.2-34.4 84.3-68.4
+                                                                    26.4-38.5 37.3-75.8 37.6-77.7
+                                                                    -1-.5-72-27.7-72.1-110.2zm-62.8-197.4
+                                                                    c16.4-19.9 27.5-47.6 24.5-75.3
+                                                                    -23.7.9-52.3 15.8-69.3 35.7
+                                                                    -15.2 17.5-28.7 45.6-25.1 72.4
+                                                                    26.6 2.1 53.5-13.6 70-32.8z"
+															fill="#000"></path>
+													</svg>
+												</span>
+												<span class="label"
+													>Apple Calendar</span
+												>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					
+					</div>
+
+					<!--END WEDDING SECTION INFO-->
+
+					<!-- hoteles SECTION HEADER -->
+					
+
+		<section
+			class="container containerCustom py-5"
+			style="background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                     
+                        background-color: #ffffff"
+		>
+			<div class="row dresscode">
+				<!-- RECEPTION -->
+				<div class="text-center">
+					<h2
+						class="headline letraPrincipal"
+						style="color: #b78455 !important;"
+					>
+						¡Los detalles<br /> del gran día!
+					</h2>
 					<img
-						src="/img/tulipanes_v.png"
-						alt="Decoración tulipanes"
-						class="fondo"
+						src="/img/ITINERARIO-IMGitin1.jpg"
+						alt="Icono"
+						class="itinerarioImg"
 					/>
-					<div class="contenido">
-						<h2>Confirma tu asistencia ❤️</h2>
-						<form id="form">
-							<input
-								type="text"
-								id="nombre"
-								name="nombre"
-								placeholder="Tu nombre completo"
-								required
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="container containerCustom"
+			style="background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                     
+                        background-color: #fcefe7"
+		>
+			<div class="row dresscode">
+				<!-- RECEPTION -->
+				<div class="text-center">
+					<h2
+						class="headline letraPrincipal"
+						style="color: #101010 !important;"
+					>
+						<hr />Dress Code<style>
+							.img-responsive.center-block.img-headline-v2 {
+								mix-blend-mode: multiply;
+							}
+						</style>
+					</h2>
+					<img
+						src="/img/DRESSCODE-IMGdcok1.jpg"
+						alt="480x320"
+						class="img-responsive center-block img-headline-v2"
+					/>
+					<h3
+						class="wed-text letraSecundaria"
+						style="font-weight: 100;font-size: 16px; color: #101010 !important;"
+					>
+						<div style="font-size:18px;">
+							- Formal Playa -<br /><hr />
+						</div>
+					</h3>
+				</div>
+			</div>
+		</section>
+
+		<!-- SLIDER -->
+		<section
+			id="portfolio"
+			class="container"
+			style="background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                     
+                        background-color: #ffffff"
+		>
+			<div class="text-center" style="    margin-bottom: 0px;">
+				<!-- TITLE -->
+				<h2
+					class="titulo letraPrincipal"
+					style="color: 
+                #b78455 !important;"
+				>
+					Mi felicidad eres tu...
+				</h2>
+				<!-- TEXT INFO -->
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 mb-5">
+					<ul class="slides animated fadeIn">
+						<a
+							class="my-image-links vbox-item"
+							data-gall="gallery01"
+							href="/img/FOTOS1.jpg"
+							><img src="/img/FOTOS1.jpg" /></a
+						>
+					</ul>
+				</div><div class="col-lg-4 col-sm-6 mb-5">
+					<ul class="slides animated fadeIn">
+						<a
+							class="my-image-links vbox-item"
+							data-gall="gallery01"
+							href="/img/FOTOS2.jpg"
+							><img src="/img/FOTOS2.jpg" /></a
+						>
+					</ul>
+				</div><div class="col-lg-4 col-sm-6 mb-5">
+					<ul class="slides animated fadeIn">
+						<a
+							class="my-image-links vbox-item"
+							data-gall="gallery01"
+							href="/img/FOTOS3.jpg"
+							><img src="/img/FOTOS3.jpg" /></a
+						>
+					</ul>
+				</div><div class="col-lg-4 col-sm-6 mb-5">
+					<ul class="slides animated fadeIn">
+						<a
+							class="my-image-links vbox-item"
+							data-gall="gallery01"
+							href="/img/FOTOS4.jpg"
+							><img src="/img/FOTOS4.jpg" /></a
+						>
+					</ul>
+				</div><div class="col-lg-4 col-sm-6 mb-5">
+					<ul class="slides animated fadeIn">
+						<a
+							class="my-image-links vbox-item"
+							data-gall="gallery01"
+							href="/img/FOTOS5.jpg"
+							><img src="/img/FOTOS5.jpg" /></a
+						>
+					</ul>
+				</div><div class="col-lg-4 col-sm-6 mb-5">
+					<ul class="slides animated fadeIn">
+						<a
+							class="my-image-links vbox-item"
+							data-gall="gallery01"
+							href="/img/FOTOS6.jpg"
+							><img src="/img/FOTOS6.jpg" /></a
+						>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- END SLIDER-->
+
+		<!-- BRIDSMAID-GROOSMAN HEADER SECTION -->
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#bridsmaid-groosman-content .thumbnail").css(
+					"background-color",
+					"rgba(249, 249, 248, 0.01) !important",
+				);
+			});
+		</script>
+		<div
+			class="container containerCustom"
+			style="background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                     
+                        background-color: #f9ece8"
+		>
+			<section id="bridsmaid-groosman-header" class="onepage">
+				<!-- BRIDSMAID HEADER WRAPPER -->
+				<div class="text-center">
+					<!-- ICON IMAGE -->
+
+					<!-- TITLE -->
+					<h2
+						class="headline letraPrincipal"
+						style="color: #b78455 !important"
+					>
+						Nuestros Padres<br />y Padrinos
+					</h2>
+				</div>
+				<!-- END BRIDSMAID-GROOSMAN HEADER WRAPPER -->
+			</section>
+			<!-- END BRIDSMAID HEADER SECTION -->
+
+			<div
+				class="frasesMax letraSecundaria 2"
+				style="color: #383838;margin-top: 0px;"
+			>
+				<div style="font-size:20px;">
+					¡Gracias por acompañarnos<br /> en este día tan especial!
+				</div>
+			</div>
+
+			<!-- BRIDSMAID-GROOSMAN CONTENT SECTION -->
+
+			<section id="bridsmaid-groosman-content" class="onepage">
+				<div
+					class="row text-center"
+					style="display: flex; justify-content: center;"
+				>
+					<!-- BRIDESMAID ITEM-1 -->
+					<div
+						class="col-sm-6 col-md-4 animated-element animated fadeInUp"
+					>
+						<!-- BRIDESMAID WRAPPER -->
+						<div
+							class="thumbnail"
+							style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
+						>
+							<!-- PHOTO -->
+
+							<img
+								src="/img/PERSONA1-IMG000novia.jpg"
+								class="img-circle animated-element-1 animated fadeIn"
+								alt="Groosman"
 							/>
-							<button type="submit">Confirmar</button>
-						</form>
-						<p id="respuesta"></p>
-						<button data-target="inicio" style="margin-top: 20px;"
-							>Volver al inicio</button
+							<!-- BRIDESMAID INFO -->
+							<div
+								class="caption animated-element-1 animated fadeIn"
+							>
+								<!-- TITLE & EXCERPT -->
+								<h3
+									style="color: #383838;"
+									class="letraPrincipal"
+								>
+									Leticia Salcedo Estrada<br />&amp;<br /> José
+									Javier Calvillo Corté
+								</h3>
+								<p>- Padres de la Novia -</p>
+							</div>
+							<!-- END BRIDESMAID INFO -->
+						</div>
+						<!-- END BRIDESMAID WRAPPER -->
+					</div>
+					<!-- END BRIDESMAID ITEM-1 -->
+
+					<!-- BRIDESMAID ITEM-2 -->
+					<div
+						class="col-sm-6 col-md-4 animated-element delay1 animated fadeInUp"
+					>
+						<!-- BRIDESMAID WRAPPER -->
+						<div
+							class="thumbnail"
+							style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
 						>
+							<!-- PHOTO -->
+
+							<img
+								src="/img/PERSONA2-IMG000novio.jpg"
+								class="img-circle animated-element-1 animated fadeIn"
+								alt="Groosman"
+							/>
+							<!-- BRIDESMAID INFO -->
+							<div
+								class="caption animated-element-1 animated fadeIn"
+							>
+								<!-- TITLE & EXCERPT -->
+								<h3
+									style="color: #383838;"
+									class="letraPrincipal"
+								>
+									Esperanza Betancourt Valentín<br />&amp;<br
+									/>Celerino Farías Serna
+								</h3>
+								<p>- Padres del Novio -</p>
+							</div>
+							<!-- END BRIDESMAID INFO -->
+						</div>
+						<!-- END BRIDESMAID WRAPPER -->
+					</div>
+					<!-- END BRIDESMAID ITEM-2 -->
+
+					<!-- BRIDESMAID ITEM-3 -->
+					<div
+						class="col-sm-6 col-md-4 animated-element delay2 animated fadeInUp"
+					>
+						<!-- BRIDESMAID WRAPPER -->
+						<div
+							class="thumbnail"
+							style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
+						>
+							<!-- PHOTO -->
+
+							<img
+								src="/img/PERSONA3-IMG00vela.jpg"
+								class="img-circle animated-element-1 animated fadeIn"
+								alt="Groosman"
+							/>
+							<!-- BRIDESMAID INFO -->
+							<div
+								class="caption animated-element-1 animated fadeIn"
+							>
+								<!-- TITLE & EXCERPT -->
+								<h3
+									style="color: #383838;"
+									class="letraPrincipal"
+								>
+									Marisela Mendoza Díaz<br />&amp;<br />Carlos
+									Ernesto González Lievanos
+								</h3>
+								<p>- Padrinos de Velación -</p>
+							</div>
+							<!-- END BRIDESMAID INFO -->
+						</div>
+						<!-- END BRIDESMAID WRAPPER -->
+					</div>
+					<!-- END BRIDESMAID ITEM-3 -->
+
+					<!-- GROOSMAN ITEM-4 -->
+					<div
+						class="col-sm-6 col-md-4 animated-element animated fadeInUp"
+					>
+						<!-- GROOSMAN WRAPPER -->
+						<div
+							class="thumbnail"
+							style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
+						>
+							<!-- PHOTO -->
+
+							<img
+								src="/img/PERSONA4-IMG00anillos.jpg"
+								class="img-circle animated-element-1 animated fadeIn"
+								alt="Groosman"
+							/>
+							<!-- GROOSMAN INFO -->
+							<div
+								class="caption animated-element-1 animated fadeIn"
+							>
+								<!-- TITLE & EXCERPT -->
+								<h3
+									style="color: #383838;"
+									class="letraPrincipal"
+								>
+									Sebastian Rodríguez Sánchez<br />&amp;<br />
+									Marlen Zaranda Ramírez
+								</h3>
+								<p>- Padrinos de Anillos -</p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="col-sm-6 col-md-4 animated-element delay1 animated fadeInUp"
+					>
+						<!-- GROOSMAN WRAPPER -->
+						<div
+							class="thumbnail"
+							style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
+						>
+							<!-- PHOTO -->
+
+							<img
+								src="/img/PERSONA5-IMG00lazo.jpg"
+								class="img-circle animated-element-1 animated fadeIn"
+								alt="Groosman"
+							/>
+							<!-- GROOSMAN INFO -->
+							<div
+								class="caption animated-element-1 animated fadeIn"
+							>
+								<!-- TITLE & EXCERPT -->
+								<h3
+									style="color: #383838;"
+									class="letraPrincipal"
+								>
+									Cristian Israel Rodríguez Sánchez <br
+									/>&amp;<br /> Ariana Rios Morales
+								</h3>
+								<p>- Padrinos de Lazo -</p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="col-sm-6 col-md-4 animated-element delay2 animated fadeInUp"
+					>
+						<!-- GROOSMAN WRAPPER -->
+						<div
+							class="thumbnail"
+							style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
+						>
+							<!-- PHOTO -->
+
+							<img
+								src="/img/PERSONA6-IMG00arras.jpg"
+								class="img-circle animated-element-1 animated fadeIn"
+								alt="Groosman"
+							/>
+							<!-- GROOSMAN INFO -->
+							<div
+								class="caption animated-element-1 animated fadeIn"
+							>
+								<!-- TITLE & EXCERPT -->
+								<h3
+									style="color: #383838;"
+									class="letraPrincipal"
+								>
+									Nanyeli Carrillo Granados <br />&amp;<br /> José
+									Luis Rodríguez Sagahón
+								</h3>
+								<p>- Padrinos de Arras -</p>
+							</div>
+							<!-- END GROOSMAN INFO -->
+						</div>
+						<!-- END GROOSMAN WRAPPER -->
 					</div>
 				</div>
 			</section>
-		</main>
-		
+		</div>
+
+		<!-- GIFT REGISTRY HEADER SECTION -->
+		<div
+			class="container containerCustom"
+			style="background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                     
+                        background-color: #ffffff"
+		>
+			<section id="gift-registry" class="onepage">
+				<!-- GIFT HEADER WRAPPER -->
+				<div class="text-center">
+					<!-- TITLE -->
+					<h2 class="headline letraPrincipal" style="color: #b78455;">
+						<br />Obsequios
+					</h2>
+					<!-- TEXT INFO -->
+				</div>
+				<!-- END GIFT HEADER WRAPPER -->
+
+				<div
+					class="frasesMax letraSecundaria"
+					style="color: #5c5c5c;margin-top: 0px;"
+				>
+					<div style="font-size:18px;">
+						Para nosotros tu presencia es nuestro mejor regalo, pero
+						si deseas hacernos llegar un obsequio, te sugerimos <br
+						/>la siguiente opción:
+					</div>
+				</div>
+			</section>
+			<!-- END GIFT REGISTRY HEADER SECTION -->
+
+			<!-- GIFT REGISTRY CONTENT SECTION -->
+
+			<section id="gift-logo-section" class="onepage">
+				<div
+					class="container containerCustom contenedorRegalos cantRecuadros"
+				>
+					<a
+						target="_blank"
+						class="linkRegaloCuadro clearfix animated-element animated fadeInUp col-md-4"
+						href="https://mesaderegalos.liverpool.com.mx/"
+					>
+						<div class="clearfix cuadroRegalo">
+							<img
+								src="/img/REGALO1-IMGliverpoolok.jpg"
+								class="imagenRegalo"
+							/>
+							<div class="textRegalo letraSecundaria">
+								Liverpool
+							</div>
+						</div>
+					</a>
+					<a
+						target="_blank"
+						class="linkRegaloCuadro clearfix animated-element animated fadeInUp col-md-4"
+						href="https://www.amazon.com.mx/"
+					>
+						<div class="clearfix cuadroRegalo">
+							<img
+								src="/img/REGALO2-IMGamazonok.jpg"
+								class="imagenRegalo"
+							/>
+							<div class="textRegalo letraSecundaria">Amazon</div>
+						</div>
+					</a>
+
+					<a
+						target="_blank"
+						class="linkRegaloCuadro clearfix animated-element animated fadeInUp col-md-4"
+						href="https://www.sears.com.mx/"
+					>
+						<div class="clearfix cuadroRegalo">
+							<img
+								src="/img/REGALO3-IMGsearsOK.jpg"
+								class="imagenRegalo"
+							/>
+							<div class="textRegalo letraSecundaria">Sears</div>
+						</div>
+					</a>
+				</div>
+				<div class="cbuBox">
+					<div
+						data-toggle="collapse"
+						data-target="#cbubody"
+						class="cbu letraSecundaria cbuHead"
+					>
+						<i style="color: #f05642;" class="fa fa-university"
+						></i>Ver datos bancarios
+					</div>
+					<div
+						class="cbu letraSecundaria cbuBody collapse"
+						style="height: 70px; background: #fff;"
+						id="cbubody"
+					>
+						<span
+							style="color:black !important;"
+							class="fixColorWhite"
+						>
+							• BANCO: XXXXXXXXXXX<br />
+							Nº DE CUENTA: XXXXXXXX<br />
+							CUENTA CLABE: XXXXXXXX<br />
+							TITULAR: XXXXXXXXXX
+						</span>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!--  INSTAGRAM SECTION -->
+		<!-- 	<section
+			id="instagram"
+			class="container containerCustom background-cover"
+			style="background-image: url('/img/INSTAGRAM-FONDO-IMGinstagr1.jpg');"
+		>
+			<div class="row">
+				<div class="col-lg-8 col-md-offset-2">
+					<div class="hash-box">
+						<div class="text-center">
+							<div class="hash-text">
+								<i
+									class="fa fa-instagram fa-5x"
+									style="color: #ffffff"></i>
+							</div>
+
+							<h1 class="hash letraSecundaria">
+								<a
+									class="urlLink"
+									style="color:#ffffff !important"
+									target="_blank"
+									href="https://www.instagram.com/explore/tags/BODA_MYD/"
+								>
+									#BODA_MYD
+								</a>
+							</h1>
+
+							<p style="color:#ffffff !important">
+								Ver en Instagram
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>-->
+		<!-- END INSTAGRAM SECTION -->
+
+		<!-- Custom-js include -->
+		<script src="/scripts/trivia/script.js" type="text/javascript"></script>
+
+		<!-- first include tsParticles engine  -->
+		<script src="/scripts/tsparticles-engine.js" type="text/javascript"
+		></script>
+
+		<script src="scripts/tsparticles.bundle.min.js" type="text/javascript"
+		></script>
+
+		<script src="scripts/jquery-particles.js" type="text/javascript"
+		></script>
+
+		<script type="text/javascript">
+			$(document).ready(async function () {
+				// tsParticles.load("tsparticles",'efecto.json') ;
+				//$("#tsparticles").particles();
+			});
+		</script>
 	</body>
+
+	<!-- END VIDEO SECTION -->
+
+	<!--  VIDEO SECTION -->
+	<!-- END VIDEO SECTION -->
+
+	<!--  LINK SECTION -->
+	<!-- END LINK SECTION -->
+
+	<!-- CONFIRMAR SECTION -->
+	<section
+		id="reserve-image-background"
+		class="footer-background-cover1 container containerCustom"
+		style="background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                     
+                        background-color: #deb097"
+	>
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- MAIN TITLE WRAPPER -->
+				<div
+					class="about-section-wraper letraPrincipal onepage text-center animated-element-1 animated fadeIn"
+				>
+					<!-- TITLE -->
+					<h2
+						style="color: #ffffff !important;"
+						class="letraPrincipal"
+					>
+						Confirmar Asistencia
+					</h2>
+				</div>
+				<!-- END MAIN TITLE WRAPPER -->
+			</div>
+		</div>
+
+		<div class="row">
+			<div
+				class="frasesMax letraSecundaria"
+				style="color: #ffffff !important;"
+			>
+				¡GRACIAS POR COMPARTIR <br />ESTE DÍA TAN ESPECIAL <br />CON
+				NOSOTROS! <br /><br />Favor de confirmar su presencia. <br /><br
+				/>¡Muchas Gracias!
+			</div>
+			<!-- SUSCRIBE FORM OUTER WRAPPER -->
+			<div class="col-lg-10 col-md-offset-1">
+			
+
+				<div class="block-box-rsrv">
+					<!-- SUSCRIBE FORM -->
+				
+						
+					
+
+				
+				</div>
+				<!-- END SUSCRIBE FORM INNER WRAPPER -->
+			</div>
+			<!-- END SUSCRIBE FORM OUTER WRAPER -->
+		</div>
+	</section>
+	<!-- END CONFIRMAR SECTION -->
+
+	<!-- CONTACTO SECTION -->
+	<section
+		id="reserve-image-background"
+		class="container containerCustom footer-background-cover1"
+		style="background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                     
+                        background-color: #deb097"
+	>
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- MAIN TITLE WRAPPER -->
+				<div
+					class="about-section-wraper letraPrincipal onepage text-center animated-element-1 animated fadeIn"
+				>
+					<!-- TITLE -->
+					<h2
+						style="color: #ffffff !important;"
+						class="letraPrincipal"
+					>
+						Contacto <style>
+							.wspBoton {
+								background-color: #bc8d73 !important;
+							}
+						</style>
+					</h2>
+				</div>
+				<!-- END MAIN TITLE WRAPPER -->
+			</div>
+		</div>
+		<div class="row">
+			<div
+				class="frasesMax letraSecundaria"
+				style="color: #ffffff !important;"
+			>
+				<div style="font-size:20px;">
+					Puedes confirmar también<br /> vía Whatsapp.
+				</div>
+			</div>
+			<!-- SUSCRIBE FORM OUTER WRAPPER -->
+			<div class="col-lg-10 col-md-offset-1">
+				<!-- END SUSCRIBE FORM INNER WRAPPER -->
+				<a
+					target="_blank"
+					href="https://api.whatsapp.com/send/?phone=1111111&text=Confirmo%20asistencia%20a%20la%20Boda%20de%20Marisa%20y%20Daniel"
+				>
+					<div class="wspBoton letraSecundaria aa">
+						<i class="fa fa-whatsapp" aria-hidden="true"
+							><span class="letraSecundaria">
+								Confirmar a Marisa</span
+							></i
+						>
+					</div>
+				</a>
+				<a
+					target="_blank"
+					href="https://api.whatsapp.com/send/?phone=1111111&text=Confirmo%20asistencia%20a%20la%20Boda%20de%20Marisa%20y%20Daniel"
+				>
+					<div class="wspBoton letraSecundaria aa">
+						<i class="fa fa-whatsapp" aria-hidden="true">
+							<span class="letraSecundaria">
+								Confirmar a Daniel</span
+							></i
+						>
+					</div>
+				</a>
+			</div>
+			<!-- END SUSCRIBE FORM OUTER WRAPER -->
+		</div>
+	</section>
+	<!-- END CONTACTO SECTION -->
+
+	<!-- SECCION GENERICA -->
+	<!-- END GIFT REGISTRY CONTENT SECTION -->
+
+	<!-- FOOTER -->
+	<div class="container containerCustom px-0">
+		<footer
+			id="footer"
+			class="footer-background-cover"
+			style="background-image: url('/img/IMAGEN-FOOTERfinpc.jpg'); height: 82vh; display: flex; justify-content: center; align-items: flex-end;"
+		>
+			<div
+				class="container containerCustom"
+				style="display: flex; justify-content: center; align-items: flex-end;"
+			>
+				<div class="row">
+					<!-- MAIN FOOTER HEADER OUTTER WRAPPER -->
+					<div class="col-lg-12">
+						<!-- MAIN FOOTER HEADER INNER WRAPPER -->
+						<div
+							class="text-center animated-element-1 delay1 animated fadeIn"
+							style="width: 100%;"
+						>
+							<div class="margin">
+								<h1
+									style="font-size: 21px;"
+									class="personalColorFraseFinal letraSecundaria"
+								>
+									<span></span>
+								</h1>
+								<h2
+									class="margin personalColorFraseFinal letraPrincipal"
+								>
+									<span></span>
+								</h2>
+							</div>
+							<!-- END FOOTER HEADER -->
+						</div>
+						<!-- END MAIN FOOTER HEADER INNER WRAPPER -->
+					</div>
+					<!-- END MAIN FOOTER HEADER OUTTER WRAPPER -->
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Tomsom - sacar pie de página -->
+
+	<!-- Tomsom - MUSICA -->
+
+	<audio id="musica" loop="">
+		<source src="/img/cancion.mp3" type="audio/mp3" />
+	</audio>
+
+	<div
+		class="musicaOff letraSecundaria"
+		style="background-color: #b0b0b0 !important"
+		target="_blank"
+		id="sonidomusicaOff"
+	>
+		<i class="fa fa-volume-up flotante" id="iconoMusica"></i>
+	</div>
+
+	<div
+		class="musicaOn"
+		target="_blank"
+		style="background-color: #b0b0b0 !important"
+		id="sonidoMusicaOn"
+	>
+		<img src="/img/musica-on-4.gif" />
+	</div>
+
+	<!-- Tomsom - MODAL BIENVENIDA -->
+	<!--Modal inicio -->
+	<!-- 
+		<button
+			type="button"
+			class="btn letraSecundaria btn-danger hidden"
+			data-toggle="modal"
+			data-target="#modalBienvenida"></button>
+		<div
+			class="modal fade"
+			id="modalBienvenida"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+			style="display: none;"
+		>
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content modal-audio">
+					<h3>Bienvenidos a la invitación de Marisa &amp; Daniel</h3>
+					
+					<div class="text-center mb-3" id="boton-modal">
+						<button
+							class="btn letraSecundaria btn-primary w-50 rounded-pill b1 text-transform"
+							style="background-color: #b0b0b0; border-color: #b0b0b0;"
+							>Ingresar</button
+						>
+					</div>
+				</div>
+			</div>
+		</div>-->
+	<!--Modal inicio -->
+
+	<div id="divWSP"></div>
+
+	<script src="/scripts/jquery.countdown.js" type="text/javascript"></script>
+	<script src="/scripts/modernizr.js" type="text/javascript"></script>
+	<script src="/scripts/device.js" type="text/javascript"></script>
+	<script src="/scripts/jquery.flexslider.js" type="text/javascript"></script>
+	<!--   <script src="js/jquery.magnific-popup.js"></script> -->
+	<script src="/scripts/bootstrap.offcanvas.js" type="text/javascript"
+	></script>
+	<script src="/scripts/jquery.waypoints.min.js" type="text/javascript"
+	></script>
+	<script src="/scripts/sticky.min.js" type="text/javascript"></script>
+	<script src="/scripts/jquery.vide.js" type="text/javascript"></script>
+	<!--   -->
+	<script src="/scripts/pace.min.js" type="text/javascript"></script>
+	<!--    <script src="js/owl.carousel.js"></script>  -->
+	<script src="/scripts/jquery.smooth-scroll.js" type="text/javascript"
+	></script>
+	<script src="/scripts/jquery.validate.min.js" type="text/javascript"
+	></script>
+	<script src="/scripts/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="/scripts/html2pdf.bundle.min.js" type="text/javascript"
+	></script>
+
+	<!-- Galeria  -->
+	<script type="text/javascript" src="/scripts/venobox.min.js"></script>
+
+	<!-- Them script -->
+	<script src="/scripts/script.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		/* 27/11/2028 14:00:00 */
+		window.scroll({
+			top: 0,
+			left: 0,
+			behavior: "instant",
+		});
+		$(document).ready(function () {
+			if (document.getElementById("nombrePlayer") !== null) {
+				document.getElementById("nombrePlayer").style.height = "40px";
+			}
+
+			$("#clock")
+				.countdown("2026/01/17 15:00")
+				.on("update.countdown", function (event) {
+					var $this = $(this).html(
+						event.strftime(
+							"" +
+								'<span class="wraper-clock letraPrincipal"><div class="value personalColorTitutlo letraPrincipal">%D</div><div class="value-label letraPrincipal">Días</div></span><span class="sep">:</span>' +
+								'<span class="wraper-clock letraPrincipal"><div class="value personalColorTitutlo letraPrincipal">%H</div><div class="value-label letraPrincipal">Horas</div></span><span class="sep">:</span>' +
+								'<span class="wraper-clock letraPrincipal"><div class="value personalColorTitutlo letraPrincipal">%M</div><div class="value-label letraPrincipal">Minutos</div></span><span class="sep">:</span>' +
+								'<span class="wraper-clock letraPrincipal"><div class="value personalColorTitutlo letraPrincipal">%S</div><div class="value-label letraPrincipal">Segundos</div></span>',
+						),
+					);
+				});
+
+			$(".cbuHead").on("click", function () {
+				$(".fixColorWhite").css("z-index", "9999");
+			});
+
+			if ($("#modalVencimiento").length) {
+				$("#modalVencimiento").modal({
+					backdrop: "static",
+					keyboard: false,
+				});
+				$("#modalVencimiento").modal("show");
+			}
+
+			setTimeout(() => {
+				$("#modalBienvenida").modal("show");
+			}, 800);
+
+			$("#boton-modal").click(function () {
+				$("#modalBienvenida").modal("hide");
+				var audio = document.getElementById("musica");
+				audio.play();
+				audio.muted = false; // without this line it's not working although I have "muted" in HTML
+			});
+
+			$("#modalBienvenida").on("click", function () {
+				var audio = document.getElementById("musica");
+				audio.play();
+				audio.muted = false;
+			});
+		});
+
+		function apagarMusica() {
+			var audio = document.getElementById("musica");
+			console.log("entre audio apagar");
+			$("#sonidoMusicaOff").show();
+			$("#sonidoMusicaOn").hide();
+			audio.pause(); // without this line it's not working although I have "muted" in HTML
+		}
+
+		$("#sonidomusicaOff").click(function () {
+			var audio = document.getElementById("musica");
+			console.log("entre audio encender");
+			$("#sonidoMusicaOn").show();
+			$("#sonidoMusicaOff").hide();
+
+			audio.play(); // without this line it's not working although I have "muted" in HTML
+		});
+
+		$("#sonidoMusicaOn").click(function () {
+			apagarMusica();
+		});
+
+		$("#video-link").click(function () {
+			apagarMusica();
+		});
+
+		function obtenerDivMasAlto(nombreClase, widthMinimo) {
+			$(nombreClase).height("auto");
+			let alturaMaxima = 0;
+			let divMasAlto = null;
+
+			if ($(window).width() <= widthMinimo) {
+				// Restablecer altura original
+				$(nombreClase).each(function () {
+					const alturaOriginal = $(this).data("altura-original");
+					$(this).height(alturaOriginal);
+				});
+				return null; // Retorna null si el ancho no cumple la condición
+			}
+
+			$(nombreClase).each(function () {
+				const altura = $(this).outerHeight(true);
+				if (altura > alturaMaxima) {
+					alturaMaxima = altura;
+					divMasAlto = $(this);
+				}
+			});
+			$(nombreClase).height(alturaMaxima);
+		}
+
+		function ejecutarCambiosAlturas() {
+			obtenerDivMasAlto(".alturaTarjetas", 768);
+			obtenerDivMasAlto(".thumbnail", 575);
+		}
+
+		setTimeout(() => {
+			ejecutarCambiosAlturas();
+		}, "500");
+
+		$(window).on("resize", function () {
+			ejecutarCambiosAlturas();
+		});
+
+		function sanitizeFileName(fileName) {
+			fileName = fileName.replace(/[^\w\-_.]/g, "_");
+			fileName = fileName.trim();
+			return fileName;
+		}
+	</script>
+
+	<script type="text/javascript">
+		$(".closeMenu").on("click", function (e) {
+			$(".adminPanel").hide("fast");
+			$(".openMenu").show("fast");
+		});
+
+		$(".openMenu").on("click", function (e) {
+			$(".adminPanel").show("fast");
+			$(".openMenu").hide("fast");
+		});
+
+		function enviarTrivia() {
+			var URLactual = window.location + "/trivia";
+			window.location.href = URLactual;
+		}
+	</script>
+	<script type="text/javascript">
+		const jsConfetti = new JSConfetti();
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			new VenoBox({
+				selector: ".my-image-links",
+				numeration: true,
+				infinigall: true,
+				share: true,
+				spinner: "rotating-plane",
+			});
+
+			$("#slugInput").val($("#invitacion").data("slug"));
+			$("#slugPass").val($("#invitacion").data("slug"));
+		});
+
+		new VenoBox({
+			selector: ".my-video-links",
+		});
+
+		// Centrar QR en mobile
+		function ajustarQR() {
+			const qrcodeDiv = document.getElementById("qrcode");
+			if (!qrcodeDiv) return;
+
+			const parentDiv = qrcodeDiv.parentElement;
+
+			if (window.innerWidth < 768) {
+				parentDiv.classList.add("d-flex", "justify-content-center");
+			} else {
+				parentDiv.classList.remove("d-flex", "justify-content-center");
+			}
+		}
+
+		window.addEventListener("resize", ajustarQR);
+
+		//Cambiar tamaño de los regalos dependiendo cuantos hay
+		var tamanioRegalo =
+			$(".cantRecuadros .linkRegaloCuadro").length <= 2
+				? "col-md-6"
+				: "col-md-4";
+		$(".cantRecuadros .linkRegaloCuadro").addClass(tamanioRegalo);
+
+		//funcion para el fondo del sobre
+		/*  function calcularBorder() {
+            var alturaMesa = $('.mesa').height();
+            var anchoMesa = $('.mesa').width();
+
+            var screenHeight = window.innerHeight; // Obtiene el alto visible de la ventana
+            var screenWidth = window.innerWidth; // Obtiene el ancho visible de la ventana
+
+            var resultado = screenHeight / 2 - (alturaMesa / 2);
+            var resultado2 = screenWidth / 2 - (anchoMesa / 2);
+
+            $(".blackclover").css({
+                "border-top-width": resultado + "px",
+                "border-bottom-width": resultado + "px",
+                "border-left-width": resultado2 + "px",
+                "border-right-width": resultado2 + "px"
+            });
+        }
+
+        calcularBorder();
+        $(window).on('resize', calcularBorder);*/
+
+		function guardarMovimientoPase(
+			idPase,
+			slug,
+			accion,
+			actionMethod,
+			valor,
+		) {
+			$.ajax({
+				type: "POST",
+				url: "/invitaciones/controllers/movimientosPases.php",
+				data: {
+					id: idPase,
+					slug: slug,
+					accion: accion,
+					actionMethod: actionMethod,
+					valor: valor,
+				},
+				success: function (response) {},
+				error: function (error) {},
+			});
+		}
+
+		if ($("#invitacion").data("idpase")) {
+			const idPase = $("#invitacion").data("idpase");
+			const slug = $("#invitacion").data("slug");
+			const accion = "VIEW";
+			const actionMethod = "insertMovimiento";
+			guardarMovimientoPase(idPase, slug, accion, actionMethod, null);
+		}
+	</script>
+
+	<script type="text/javascript">
+		/* que el mensaje de confir no pase los 495 caracteres */
+		function enforceMaxLength(el) {
+			if (el.value.length > el.maxLength) {
+				el.value = el.value.slice(0, el.maxLength);
+			}
+		}
+
+		$(document).ready(function () {
+			// Cuando se clickea en Aceptar
+			$("#btnAceptar").click(function () {
+				$("#nombrePass").val("");
+				$("#mensajePass").val("");
+				$("#mensajePass").attr(
+					"placeholder",
+					"Puedes comentarnos si tienes alguna restricción alimentaria y también dejar un bonito mensaje en el libro de firmas!",
+				);
+				$("#cantidadPersonasPass").prop("disabled", false).val();
+				$("#asistenciaPass").val("Si");
+				$("#confirmar-invi").text("Aceptar invitación");
+				$("#groupCantPersonas").show();
+				$("#mensajeCancelacion").hide();
+				$("#modalAceptar").modal("show");
+			});
+			// Cuando se clickea en Rechazar
+			$("#btnRechazar").click(function () {
+				$("#nombrePass").val("");
+				$("#mensajePass").val("");
+				$("#mensajePass").attr("placeholder", "");
+				$("#cantidadPersonasPass").val(0).prop("disabled", true);
+				$("#asistenciaPass").val("No");
+				$("#confirmar-invi").text("Rechazar invitación");
+				$("#groupCantPersonas").hide();
+				$("#mensajeCancelacion").show();
+				$("#modalAceptar").modal("show");
+			});
+		});
+
+		$("#reconfirmar").click(function () {
+			$("#div_reconfirmar").hide();
+			$("#divConfirmacion").css("display", "flex");
+		});
+
+		$("#confirmar-invi").on("click", function () {
+			setTimeout(() => {
+				let texto = "asistiras";
+				let color = "green";
+				let texto_btn = '"Aceptar invitación"';
+				if ($("#asistenciaPass").val() == "No") {
+					texto = "no asistiras";
+					color = "red";
+					let texto_btn = '"Rechazar invitación"';
+					$("#txt-cant").hide();
+				} else {
+					$("#txt-cant").show();
+				}
+				$("#text-confirm-valor").css("color", color);
+				$("#text-confirm-valor").text(texto);
+				$("#text-confirm-fecha").text(formatDate(Date.now()));
+				$("#text-confirm-cant").text($("#cantidadPersonasPass").val());
+				$("#divConfirmacion").hide();
+				$("#div_reconfirmar").show();
+				$("#modalAceptar").modal("hide");
+				$("#confirmar-invi").text(texto_btn);
+			}, 4000);
+		});
+
+		function formatDate(date) {
+			var d = new Date(date),
+				day = "" + d.getDate(),
+				month = "" + (d.getMonth() + 1),
+				year = d.getFullYear();
+
+			if (day.length < 2) day = "0" + day;
+			if (month.length < 2) month = "0" + month;
+
+			return [day, month, year].join("/");
+		}
+	</script>
+
+	<!-- WHATSAPP -->
+	<!--
+		<script
+			defer=""
+			src="./- Nuestra Boda - - Marisa & Daniel_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+			integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+			data-cf-beacon='{"version":"2024.11.0","token":"c6f6e840dc3f4c878811f48910b6b5fb","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+			crossorigin="anonymous"></script>
+ -->
+	<canvas
+		style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1000; pointer-events: none;"
+		width="1905"
+		height="945"></canvas>
 </html>

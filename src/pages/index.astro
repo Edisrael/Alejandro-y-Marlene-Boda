@@ -1,36 +1,32 @@
-<!doctype html>
-<html
-	lang="es"
-	class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths desktop landscape"
->
-	<head
-		><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+---
+import Scripts from '../components/Scripts.astro';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Invitaciones para eventos">
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<!-- <meta name="viewport" content="width=480"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="Invitaciones para eventos" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="- Nuestra Boda - - Marisa & Daniel">
+    <meta property="og:description" content="- Nuestra Boda -">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/IMG-OGmini.jpg">
+    <meta property="og:image:width" content="709">
+    <meta property="og:image:height" content="709">
 
-		<meta property="og:type" content="website" />
-		<meta
-			property="og:title"
-			content="- Nuestra Boda - - Marisa & Daniel"
-		/>
+    <link type="image/x-icon" rel="shortcut icon" href="/img/favicon.png">
+    
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/font-awesome_all.min.css">
+    <link rel="stylesheet" href="/styles/animate.css">
+    <link rel="stylesheet" href="/styles/style.css">
 
-		<meta property="og:description" content="- Nuestra Boda -" />
-		<meta property="og:url" content="" />
-		<!-- <meta property="og:description" content="" />		 -->
-		<meta property="og:image" content="/img/IMG-OGmini.jpg" />
-		<meta property="og:image:width" content="709" />
-		<meta property="og:image:height" content="709" />
-
-
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" is:inline></script>
-<script src="/scripts/bootstrap.min.js" is:inline></script>
-
-
-		<link type="image/x-icon" rel="shortcut icon" href="/img/favicon.png" />
+    <!-- Scripts Component -->
+    <Scripts />
 
 		<!-- preguntame-->
 		<script src="/scripts/confetti.browser.js" type="text/javascript"
@@ -1585,37 +1581,22 @@
 		<img src="/img/musica-on-4.gif" />
 	</div>
 
-	<!-- Tomsom - MODAL BIENVENIDA -->
-	<!--Modal inicio -->
-		<button
-			type="button"
-			class="btn letraSecundaria btn-danger hidden"
-			data-toggle="modal"
-			data-target="#modalBienvenida"></button>
-		<div
-			class="modal fade"
-			id="modalBienvenida"
-			tabindex="-1"
-			role="dialog"
-			aria-labelledby="exampleModalLabel"
-			aria-hidden="true"
-			style="display: none;"
-		>
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content modal-audio">
-					<h3>Bienvenidos a la invitación de Marisa &amp; Daniel</h3>
-					
-					<div class="text-center mb-3" id="boton-modal">
-						<button
-							class="btn letraSecundaria btn-primary w-50 rounded-pill b1 text-transform"
-							style="background-color: #b0b0b0; border-color: #b0b0b0;"
-							>Ingresar</button
-						>
+	<!-- Welcome Modal -->
+	<div class="modal fade" id="modalBienvenida" tabindex="-1" role="dialog" aria-labelledby="modalBienvenidaLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body text-center">
+					<h3 class="mb-4">Bienvenidos a la invitación de<br>Marisa & Daniel</h3>
+					<div class="mb-3" id="boton-modal">
+						<button class="btn letraSecundaria btn-primary w-50 rounded-pill b1 text-transform"
+								style="background-color: #b0b0b0; border-color: #b0b0b0;">
+							Ingresar
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-	<!--Modal inicio -->
+	</div>
 
 	<div id="divWSP"></div>
 

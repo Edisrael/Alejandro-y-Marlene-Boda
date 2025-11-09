@@ -568,9 +568,44 @@ import Scripts from "../components/Scripts.astro";
 							}
 						</style>
 					</h2>
+
+					<div
+						class="animated animated-element-1 col-md-6 fadeIn margin1 pading-text"
+						style="float: none; margin: 0 auto;"
+					>
+						<div
+							class="wraper-we letraSecundaria onepage alturaTarjetas bgCeremoonias"
+							style="color: rgb(16, 16, 16) !important; background-color: rgba(249, 249, 248, 0.51);"
+						>
+							<h3 class="letraSecundaria">
+								<div align="center">
+									Parroquia de Cristo Rey
+								</div>
+							</h3>
+							<img
+								src="/img/CEREMONIA1-IMGCEREMONIA1-IMGceryrec.jpg"
+								alt="Ceremonia"
+								class="img-responsive center-block fl-wd"
+							/>
+							<h3 class="wed-text letraSecundaria"></h3>
+
+							<div class="wed-text">
+								<b>Dirección:</b> Av. Guerra de Reforma, Av. Leyes de Reforma 1131, 3a. Secc, Iztapalapa, 09310 Ciudad de México
+							</div>
+
+							<div
+								type="button"
+								class="btn-map"
+								data-toggle="modal"
+								data-target="#mapa1"
+							>
+								Ver mapa de la Ceremonia
+							</div>
+						</div>
+					</div>
 				</div>
 
-				<div class="text-center">
+				<div class="text-center" style="margin-top: 50px;">
 					<!-- ICON IMAGE -->
 
 					<!-- TITLE -->
@@ -595,6 +630,41 @@ import Scripts from "../components/Scripts.astro";
 							}
 						</style>
 					</h2>
+
+					<div
+						class="animated animated-element-1 col-md-6 fadeIn margin1 pading-text"
+						style="float: none; margin: 0 auto;"
+					>
+						<div
+							class="wraper-we letraSecundaria onepage alturaTarjetas bgCeremoonias"
+							style="color: rgb(16, 16, 16) !important; background-color: rgba(249, 249, 248, 0.51);"
+						>
+							<h3 class="letraSecundaria">
+								<div align="center">
+								Salón MariAngelica
+								</div>
+							</h3>
+							<img
+								src="/img/CEREMONIA2-IMGCEREMONIA1-IMGceryrec.jpg"
+								alt="Recepción"
+								class="img-responsive center-block fl-wd"
+							/>
+							<h3 class="wed-text letraSecundaria"></h3>
+
+							<div class="wed-text">
+								<b>Dirección:</b> C. 14 Nº31, Leyes de Reforma 2da Secc, Iztapalapa, 09310 Ciudad de México, CDMX
+							</div>
+
+							<div
+								type="button"
+								class="btn-map"
+								data-toggle="modal"
+								data-target="#mapa2"
+							>
+								Ver mapa de la Recepción
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- END WEDDING SECTION HEADER -->
@@ -619,6 +689,7 @@ import Scripts from "../components/Scripts.astro";
 			</script>
 
 			<!-- mapas modales -->
+            <!-- Modal Ceremonia -->
 			<div id="mapa1" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 					<!-- Modal content-->
@@ -631,7 +702,7 @@ import Scripts from "../components/Scripts.astro";
 							>
 							<h4 class="modal-title letraSecundaria">
 								<div align="center">
-									Hard Rock <br />Hotel Cancún
+									Parroquia de Cristo Rey
 								</div>
 							</h4>
 						</div>
@@ -640,20 +711,64 @@ import Scripts from "../components/Scripts.astro";
 								<!-- Tomsom - Mapa por coordenadas -->
 								<iframe
 									class="mapa-pop"
-									src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB1geNxkp_O4NgreB1jwUeAOh2Cu_j7Gjw&q=21.089564274925536,-86.77049278768199"
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4477825074096!2d-99.07247492374526!3d19.376133181746447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fdba94c0e3e7%3A0xf4c974d43719a28d!2sParroquia%20de%20Cristo%20Rey!5e0!3m2!1ses!2smx!4v1699491175044!5m2!1ses!2smx"
+									width="100%"
 									height="300"
-									frameborder="0"
 									style="border:0"
-									allowfullscreen=""></iframe>
+									allowfullscreen=""
+									loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 							<h3 class="wed-text"></h3>
 
 							<div class="wed-text">
-								Cuándo: 29 de noviembre de 2025 14:00 hrs.
+								<b>Dirección:</b> Av. Guerra de Reforma, Av. Leyes de Reforma 1131, 3a. Secc, Iztapalapa, 09310 Ciudad de México
 							</div>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn letraSecundaria btn-default"
+								data-dismiss="modal">Cerrar</button
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <!-- Modal Recepción -->
+            <div id="mapa2" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content" style="z-index:999;">
+						<div class="modal-header">
+							<button
+								type="button"
+								class="close"
+								data-dismiss="modal">×</button
+							>
+							<h4 class="modal-title letraSecundaria">
+								<div align="center">
+									Salón MariAngelica
+								</div>
+							</h4>
+						</div>
+						<div class="modal-body">
+							<div class="maps">
+								<!-- Tomsom - Mapa por coordenadas -->
+								<iframe
+									class="mapa-pop"
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.4783873633083!2d-99.07240372374527!3d19.374384781747198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd61e09dd531%3A0x30dd3a6108131a94!2sSal%C3%B3n%20MariAngelica!5e0!3m2!1ses!2smx!4v1699491265461!5m2!1ses!2smx"
+									width="100%"
+									height="300"
+									style="border:0"
+									allowfullscreen=""
+									loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+							<h3 class="wed-text"></h3>
 							<div class="wed-text">
-								Dirección: Blvd. Kukulcan Km 14, Zona Hotelera,
-								77500 Cancún, Q.R., México
+								<b>Dirección:</b>C. 14 Nº31, Leyes de Reforma 2da Secc, Iztapalapa, 09310 Ciudad de México, CDMX
 							</div>
 						</div>
 						<div class="modal-footer">
@@ -678,162 +793,7 @@ import Scripts from "../components/Scripts.astro";
 				});
 			</script>
 			<!-- end mapas modales -->
-			<!-- THE WEDDING SECTION INFO-->
-			<section id="wedding-info" class="onepage">
-				<div class="">
-					<div
-						class="row"
-						style="width: 100%; margin: auto; justify-content: center;"
-					>
-						<!-- RECEPTION -->
-						<div
-							class="animated animated-element-1 col-md-6 fadeIn margin1 pading-text"
-						>
-							<div
-								class="wraper-we letraSecundaria onepage alturaTarjetas bgCeremoonias"
-								style="color: rgb(16, 16, 16) !important; background-color: rgba(249, 249, 248, 0.51); height: 732.906px;"
-							>
-								<!-- HEADER -->
-								<h3 class="letraSecundaria">
-									<div align="center">
-										Hard Rock <br />Hotel Cancún
-									</div>
-								</h3>
-								<!-- GOOGLE MAP LINK -->
-
-								<!--IMAGE-->
-								<img
-									src="/img/CEREMONIA1-IMGCEREMONIA1-IMGceryrec.jpg"
-									alt="480x320"
-									class="img-responsive center-block fl-wd"
-								/>
-								<!-- SUBHEADER-->
-								<h3 class="wed-text letraSecundaria"></h3>
-
-								<!-- Tomsom - Donde y cuando independiente -->
-								<div class="wed-text">
-									<b>Cuándo: </b> 29 de noviembre de 2025 14:00
-									hrs.
-								</div>
-								<div class="wed-text">
-									<b>Dirección:</b> Blvd. Kukulcan Km 14, Zona
-									Hotelera, 77500 Cancún, Q.R., México
-								</div>
-
-								<div
-									type="button"
-									class="btn-map"
-									data-toggle="modal"
-									data-target="#mapa1"
-								>
-									Ver mapa
-								</div>
-
-								<div class="dropdown calendar-dropdown">
-									<button
-										class="btn-map dropdown-toggle"
-										type="button"
-										data-toggle="dropdown"
-									>
-										Agendar en el calendario
-									</button>
-									<ul
-										class="dropdown-menu"
-										style="display: none;"
-									>
-										<li>
-											<a
-												class="dropdown-item"
-												href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=++Hard+Rock+Hotel+Canc%C3%BAn&dates=20251129T200000Z/20251129T210000Z&details=++Hard+Rock+Hotel+Canc%C3%BAn&location="
-												target="_blank"
-												rel="noopener"
-											>
-												<span
-													class="icon google-icon"
-													aria-hidden="true"
-												>
-													<!-- Google "G" multicolor (SVG fiable) -->
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														viewBox="0 0 533.5 544.3"
-														role="img"
-														aria-label="Google"
-													>
-														<path
-															fill="#4285F4"
-															d="M533.5 278.4c0-17.6-1.5-34.5-4.5-50.9H272v96.4h146.9c-6.3 34.6-24.7 63.9-52.6 83.4v69.4h85.1c49.8-45.9 78.1-113.5 78.1-198.7z"
-														></path>
-														<path
-															fill="#34A853"
-															d="M272 544.3c72.7 0 133.8-24.1 178.5-65.3l-85.1-69.4c-23.6 15.8-54 25.1-93.4 25.1-71.7 0-132.5-48.4-154.2-113.4H36.5v71.3C80.8 484.4 169 544.3 272 544.3z"
-														></path>
-														<path
-															fill="#FBBC05"
-															d="M117.8 321.3c-5.3-15.8-8.3-32.7-8.3-50.3s3-34.5 8.3-50.3V149.4H36.5C13.1 191.9 0 236.5 0 271s13.1 79.1 36.5 121.6l81.3-71.3z"
-														></path>
-														<path
-															fill="#EA4335"
-															d="M272 107.1c39.1 0 74 13.5 101.6 40.1l76.1-76.1C405.4 24.6 344.3 0 272 0 169 0 80.8 59.9 36.5 149.4l81.3 71.3C139.5 155.5 200.3 107.1 272 107.1z"
-														></path>
-													</svg>
-												</span>
-												<span class="label"
-													>Google Calendar</span
-												>
-											</a>
-										</li>
-										<li>
-											<a
-												class="dropdown-item"
-												href="https://invitameok.com/invitaciones/descargar_ics.php?titulo=++Hard+Rock+Hotel+Canc%C3%BAn&descripcion=++Hard+Rock+Hotel+Canc%C3%BAn&lugar=&inicio=2025-11-29+14%3A00%3A00&fin=2025-11-29+15%3A00%3A00&zona=America%2FMexico_City"
-												target="_blank"
-												rel="noopener"
-											>
-												<span
-													class="icon apple-icon"
-													aria-hidden="true"
-												>
-													<!-- Apple logo oficial -->
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														viewBox="0 0 384 512"
-														role="img"
-														aria-label="Apple"
-													>
-														<path
-															d="M318.7 268.7c-.2-37.2 16.4-65.4 50-85.8
-                                                                    -18.8-26.9-46.7-41.7-83.9-44.4
-                                                                    -35.3-2.6-74.2 20.8-88.1 20.8
-                                                                    -14.4 0-48.2-20.1-74.7-19.5
-                                                                    -77.3 1.2-127.1 67.6-127.1 140.3
-                                                                    0 59.4 22.6 122.8 50.6 163.2
-                                                                    23.5 33.8 51.3 71.8 88.1 70.4
-                                                                    34.9-1.4 48.1-22.7 90.2-22.7
-                                                                    41.6 0 53.7 22.7 90.5 22
-                                                                    37.6-.6 61.2-34.4 84.3-68.4
-                                                                    26.4-38.5 37.3-75.8 37.6-77.7
-                                                                    -1-.5-72-27.7-72.1-110.2zm-62.8-197.4
-                                                                    c16.4-19.9 27.5-47.6 24.5-75.3
-                                                                    -23.7.9-52.3 15.8-69.3 35.7
-                                                                    -15.2 17.5-28.7 45.6-25.1 72.4
-                                                                    26.6 2.1 53.5-13.6 70-32.8z"
-															fill="#000"></path>
-													</svg>
-												</span>
-												<span class="label"
-													>Apple Calendar</span
-												>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!--END WEDDING SECTION INFO-->
-
-					<!-- hoteles SECTION HEADER -->
+			<!-- hoteles SECTION HEADER -->
 
 					<section
 						class="container containerCustom py-5"
@@ -873,8 +833,9 @@ import Scripts from "../components/Scripts.astro";
 							<!-- RECEPTION -->
 							<div class="text-center">
 								<h2
-									class="headline letraPrincipal"
-									style="color: #101010 !important;"
+									class="titulo letraPrincipal"
+								style="color: 
+               					 #b78455 !important;"
 								>
 									<hr />Dress Code<style>
 										.img-responsive.center-block.img-headline-v2 {
@@ -892,7 +853,9 @@ import Scripts from "../components/Scripts.astro";
 									style="font-weight: 100;font-size: 16px; color: #101010 !important;"
 								>
 									<div style="font-size:18px;">
-										- Formal Playa -<br /><hr />
+										<br>Formal<br>- Queremos tu mejor perfil para el
+álbum de recuerdos -<hr />
+
 									</div>
 								</h3>
 							</div>
@@ -1011,7 +974,7 @@ import Scripts from "../components/Scripts.astro";
 									class="headline letraPrincipal"
 									style="color: #b78455 !important"
 								>
-									Nuestros Padres<br />y Padrinos
+									Nuestros Padres
 								</h2>
 							</div>
 							<!-- END BRIDSMAID-GROOSMAN HEADER WRAPPER -->
@@ -1062,8 +1025,8 @@ import Scripts from "../components/Scripts.astro";
 												style="color: #383838;"
 												class="letraPrincipal"
 											>
-												Leticia Salcedo Estrada<br
-												/>&amp;<br /> José Javier Calvillo
+												Margarita Sebastián Jose<br
+												/>&amp;<br /> Carlos Enrique Barrios
 												Corté
 											</h3>
 											<p>- Padres de la Novia -</p>
@@ -1099,155 +1062,14 @@ import Scripts from "../components/Scripts.astro";
 												style="color: #383838;"
 												class="letraPrincipal"
 											>
-												Esperanza Betancourt Valentín<br
-												/>&amp;<br />Celerino Farías
-												Serna
+												Rosa Angeles Yañez Reyes<br
+												/>&amp;<br />Sabas Duran Dominguez
 											</h3>
 											<p>- Padres del Novio -</p>
 										</div>
 										<!-- END BRIDESMAID INFO -->
 									</div>
 									<!-- END BRIDESMAID WRAPPER -->
-								</div>
-								<!-- END BRIDESMAID ITEM-2 -->
-
-								<!-- BRIDESMAID ITEM-3 -->
-								<div
-									class="col-sm-6 col-md-4 animated-element delay2 animated fadeInUp"
-								>
-									<!-- BRIDESMAID WRAPPER -->
-									<div
-										class="thumbnail"
-										style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
-									>
-										<!-- PHOTO -->
-
-										<img
-											src="/img/PERSONA3-IMG00vela.jpg"
-											class="img-circle animated-element-1 animated fadeIn"
-											alt="Groosman"
-										/>
-										<!-- BRIDESMAID INFO -->
-										<div
-											class="caption animated-element-1 animated fadeIn"
-										>
-											<!-- TITLE & EXCERPT -->
-											<h3
-												style="color: #383838;"
-												class="letraPrincipal"
-											>
-												Marisela Mendoza Díaz<br
-												/>&amp;<br />Carlos Ernesto
-												González Lievanos
-											</h3>
-											<p>- Padrinos de Velación -</p>
-										</div>
-										<!-- END BRIDESMAID INFO -->
-									</div>
-									<!-- END BRIDESMAID WRAPPER -->
-								</div>
-								<!-- END BRIDESMAID ITEM-3 -->
-
-								<!-- GROOSMAN ITEM-4 -->
-								<div
-									class="col-sm-6 col-md-4 animated-element animated fadeInUp"
-								>
-									<!-- GROOSMAN WRAPPER -->
-									<div
-										class="thumbnail"
-										style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
-									>
-										<!-- PHOTO -->
-
-										<img
-											src="/img/PERSONA4-IMG00anillos.jpg"
-											class="img-circle animated-element-1 animated fadeIn"
-											alt="Groosman"
-										/>
-										<!-- GROOSMAN INFO -->
-										<div
-											class="caption animated-element-1 animated fadeIn"
-										>
-											<!-- TITLE & EXCERPT -->
-											<h3
-												style="color: #383838;"
-												class="letraPrincipal"
-											>
-												Sebastian Rodríguez Sánchez<br
-												/>&amp;<br />
-												Marlen Zaranda Ramírez
-											</h3>
-											<p>- Padrinos de Anillos -</p>
-										</div>
-									</div>
-								</div>
-
-								<div
-									class="col-sm-6 col-md-4 animated-element delay1 animated fadeInUp"
-								>
-									<!-- GROOSMAN WRAPPER -->
-									<div
-										class="thumbnail"
-										style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
-									>
-										<!-- PHOTO -->
-
-										<img
-											src="/img/PERSONA5-IMG00lazo.jpg"
-											class="img-circle animated-element-1 animated fadeIn"
-											alt="Groosman"
-										/>
-										<!-- GROOSMAN INFO -->
-										<div
-											class="caption animated-element-1 animated fadeIn"
-										>
-											<!-- TITLE & EXCERPT -->
-											<h3
-												style="color: #383838;"
-												class="letraPrincipal"
-											>
-												Cristian Israel Rodríguez
-												Sánchez <br />&amp;<br /> Ariana
-												Rios Morales
-											</h3>
-											<p>- Padrinos de Lazo -</p>
-										</div>
-									</div>
-								</div>
-
-								<div
-									class="col-sm-6 col-md-4 animated-element delay2 animated fadeInUp"
-								>
-									<!-- GROOSMAN WRAPPER -->
-									<div
-										class="thumbnail"
-										style="background-color: rgba(249, 249, 248, 0.01); height: 500.672px;"
-									>
-										<!-- PHOTO -->
-
-										<img
-											src="/img/PERSONA6-IMG00arras.jpg"
-											class="img-circle animated-element-1 animated fadeIn"
-											alt="Groosman"
-										/>
-										<!-- GROOSMAN INFO -->
-										<div
-											class="caption animated-element-1 animated fadeIn"
-										>
-											<!-- TITLE & EXCERPT -->
-											<h3
-												style="color: #383838;"
-												class="letraPrincipal"
-											>
-												Nanyeli Carrillo Granados <br
-												/>&amp;<br /> José Luis Rodríguez
-												Sagahón
-											</h3>
-											<p>- Padrinos de Arras -</p>
-										</div>
-										<!-- END GROOSMAN INFO -->
-									</div>
-									<!-- END GROOSMAN WRAPPER -->
 								</div>
 							</div>
 						</section>
@@ -1281,10 +1103,17 @@ import Scripts from "../components/Scripts.astro";
 								style="color: #5c5c5c;margin-top: 0px;"
 							>
 								<div style="font-size:18px;">
-									Para nosotros tu presencia es nuestro mejor
-									regalo, pero si deseas hacernos llegar un
-									obsequio, te sugerimos <br />la siguiente
-									opción:
+								Tu presencia siempre será el mejor
+regalo para nosotros.
+
+<br />Pero si deseas acompañarnos con un
+detalle adicional, contaremos con sobres
+en el evento para depositar cartas,
+buenos deseos o una muestra de cariño
+para nuestro futuro juntos.
+
+<br />También podrás hacerlo de forma digital
+si así lo prefieres.
 								</div>
 							</div>
 						</section>
@@ -1293,56 +1122,7 @@ import Scripts from "../components/Scripts.astro";
 						<!-- GIFT REGISTRY CONTENT SECTION -->
 
 						<section id="gift-logo-section" class="onepage">
-							<div
-								class="container containerCustom contenedorRegalos cantRecuadros"
-							>
-								<a
-									target="_blank"
-									class="linkRegaloCuadro clearfix animated-element animated fadeInUp col-md-4"
-									href="https://mesaderegalos.liverpool.com.mx/"
-								>
-									<div class="clearfix cuadroRegalo">
-										<img
-											src="/img/REGALO1-IMGliverpoolok.jpg"
-											class="imagenRegalo"
-										/>
-										<div class="textRegalo letraSecundaria">
-											Liverpool
-										</div>
-									</div>
-								</a>
-								<a
-									target="_blank"
-									class="linkRegaloCuadro clearfix animated-element animated fadeInUp col-md-4"
-									href="https://www.amazon.com.mx/"
-								>
-									<div class="clearfix cuadroRegalo">
-										<img
-											src="/img/REGALO2-IMGamazonok.jpg"
-											class="imagenRegalo"
-										/>
-										<div class="textRegalo letraSecundaria">
-											Amazon
-										</div>
-									</div>
-								</a>
-
-								<a
-									target="_blank"
-									class="linkRegaloCuadro clearfix animated-element animated fadeInUp col-md-4"
-									href="https://www.sears.com.mx/"
-								>
-									<div class="clearfix cuadroRegalo">
-										<img
-											src="/img/REGALO3-IMGsearsOK.jpg"
-											class="imagenRegalo"
-										/>
-										<div class="textRegalo letraSecundaria">
-											Sears
-										</div>
-									</div>
-								</a>
-							</div>
+							
 							<div class="cbuBox">
 								<div
 									data-toggle="collapse"
@@ -1373,42 +1153,6 @@ import Scripts from "../components/Scripts.astro";
 						</section>
 					</div>
 
-					<!--  INSTAGRAM SECTION -->
-					<!-- 	<section
-			id="instagram"
-			class="container containerCustom background-cover"
-			style="background-image: url('/img/INSTAGRAM-FONDO-IMGinstagr1.jpg');"
-		>
-			<div class="row">
-				<div class="col-lg-8 col-md-offset-2">
-					<div class="hash-box">
-						<div class="text-center">
-							<div class="hash-text">
-								<i
-									class="fa fa-instagram fa-5x"
-									style="color: #ffffff"></i>
-							</div>
-
-							<h1 class="hash letraSecundaria">
-								<a
-									class="urlLink"
-									style="color:#ffffff !important"
-									target="_blank"
-									href="https://www.instagram.com/explore/tags/BODA_MYD/"
-								>
-									#BODA_MYD
-								</a>
-							</h1>
-
-							<p style="color:#ffffff !important">
-								Ver en Instagram
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>-->
-					<!-- END INSTAGRAM SECTION -->
 
 					<!-- Custom-js include -->
 					<script
@@ -1445,55 +1189,131 @@ import Scripts from "../components/Scripts.astro";
 				<!-- END LINK SECTION -->
 
 				<!-- CONFIRMAR SECTION -->
-				<section
-					id="reserve-image-background"
-					class="footer-background-cover1 container containerCustom"
-					style="background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                     
-                        background-color: #deb097"
+				<!-- CONFIRMAR SECTION -->
+<section
+	id="reserve-image-background"
+	class="footer-background-cover1 container containerCustom"
+	style="background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: #deb097;"
+>
+	<div class="row">
+		<div class="col-xs-12">
+			<!-- MAIN TITLE WRAPPER -->
+			<div
+				class="about-section-wraper letraPrincipal onepage text-center animated-element-1 animated fadeIn"
+			>
+				<!-- TITLE -->
+				<h2
+					style="color: #ffffff !important;"
+					class="letraPrincipal"
 				>
-					<div class="row">
-						<div class="col-xs-12">
-							<!-- MAIN TITLE WRAPPER -->
-							<div
-								class="about-section-wraper letraPrincipal onepage text-center animated-element-1 animated fadeIn"
-							>
-								<!-- TITLE -->
-								<h2
-									style="color: #ffffff !important;"
-									class="letraPrincipal"
-								>
-									Confirmar Asistencia
-								</h2>
-							</div>
-							<!-- END MAIN TITLE WRAPPER -->
-						</div>
-					</div>
+					Confirmar Asistencia
+				</h2>
+			</div>
+			<!-- END MAIN TITLE WRAPPER -->
+		</div>
+	</div>
 
-					<div class="row">
-						<div
-							class="frasesMax letraSecundaria"
-							style="color: #ffffff !important;"
-						>
-							¡GRACIAS POR COMPARTIR <br />ESTE DÍA TAN ESPECIAL <br
-							/>CON NOSOTROS! <br /><br />Favor de confirmar su
-							presencia. <br /><br />¡Muchas Gracias!
-						</div>
-						<!-- SUSCRIBE FORM OUTER WRAPPER -->
-						<div class="col-lg-10 col-md-offset-1">
-							<div class="block-box-rsrv">
-								<!-- SUSCRIBE FORM -->
-							</div>
-							<!-- END SUSCRIBE FORM INNER WRAPPER -->
-						</div>
-						<!-- END SUSCRIBE FORM OUTER WRAPER -->
-					</div>
-				</section>
-				<!-- END CONFIRMAR SECTION -->
+
+		<div
+			class="frasesMax letraSecundaria text-center"
+			style="color: #ffffff !important;"
+		>
+			¡GRACIAS POR COMPARTIR <br />ESTE DÍA TAN ESPECIAL <br
+			/>CON NOSOTROS!<br />¡Muchas Gracias!
+		</div>
+
+		<!-- SUSCRIBE FORM OUTER WRAPPER -->
+<div class="col-lg-10 col-md-offset-1">
+	<div class="block-box-rsrv text-center" style="margin-top:30px;">
+
+		<!-- Contenedor de mensaje dinámico -->
+		<div id="mensajeInvitado" class="letraSecundaria" style="color:white; font-size:1.2em; margin-bottom:20px;">
+			Cargando información...
+		</div>
+
+		<!-- Botón -->
+		<button id="btnConfirmar" 
+				class="btn btn-light"
+				style="background-color:#fff; color:#a87b5a; border:none; border-radius:25px; padding:10px 25px; font-weight:bold; display:none;">
+			Aceptar invitación
+		</button>
+
+	</div>
+	<!-- END SUSCRIBE FORM INNER WRAPPER -->
+</div>
+<!-- END SUSCRIBE FORM OUTER WRAPPER -->
+
+
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbx6_yNUE4PofLOrAvuuEz3ThBdZ4lFFJox41nlx8GHCxUL1_6dhIdgNn-bOdH_wWlIQvw/exec";
+const params = new URLSearchParams(window.location.search);
+const codigo = params.get("cd");
+const mensajeDiv = document.getElementById("mensajeInvitado");
+const btnConfirmar = document.getElementById("btnConfirmar");
+let invitado = null;
+
+if (!codigo) {
+	mensajeDiv.innerHTML = "Código inválido o faltante.";
+} else {
+	fetch(`${scriptURL}?cd=${codigo}`)
+		.then(r => r.json())
+		.then(data => {
+			if (data.error) {
+				mensajeDiv.innerHTML = "Invitado no encontrado.";
+			} else {
+				invitado = data;
+
+				// Si ya había confirmado antes
+				if (data.asistencia === "Confirmado") {
+					mensajeDiv.innerHTML = `
+						<b style="font-size:1.4em;">${data.nombre}</b>.<br>
+						Tienes <b>${data.boletos}</b> boleto(s) asignado(s) y ya habías confirmado tu asistencia 💕
+					`;
+					btnConfirmar.style.display = "none";
+					return;
+				}
+
+				// Si aún no ha confirmado
+				mensajeDiv.innerHTML = `
+					<b style="font-size:1.4em;">${data.nombre}</b>.<br>
+					Tienes <b>${data.boletos}</b> boleto(s) asignado(s).<br><br>
+					Favor de confirmar tu asistencia.
+				`;
+				btnConfirmar.style.display = "inline-block";
+			}
+		})
+		.catch(() => mensajeDiv.innerHTML = "Error al conectar con el servidor.");
+}
+
+btnConfirmar.addEventListener("click", () => {
+	if (!invitado) return;
+	btnConfirmar.disabled = true;
+	btnConfirmar.innerText = "Enviando...";
+
+	fetch(`${scriptURL}?cd=${codigo}&action=confirmar`)
+		.then(r => r.json())
+		.then(res => {
+			mensajeDiv.innerHTML = `<b style="font-size:1.3em;">${res.mensaje}</b>`;
+			btnConfirmar.style.display = "none";
+		})
+		.catch(() => {
+			alert("Error al registrar la confirmación.");
+			btnConfirmar.disabled = false;
+			btnConfirmar.innerText = "Aceptar invitación";
+		});
+});
+</script>
+</section>
+
+
+
 
 				<!-- CONTACTO SECTION -->
+				 
+<!--
 				<section
 					id="reserve-image-background"
 					class="container containerCustom footer-background-cover1"
@@ -1505,11 +1325,11 @@ import Scripts from "../components/Scripts.astro";
 				>
 					<div class="row">
 						<div class="col-xs-12">
-							<!-- MAIN TITLE WRAPPER -->
+							
 							<div
 								class="about-section-wraper letraPrincipal onepage text-center animated-element-1 animated fadeIn"
 							>
-								<!-- TITLE -->
+								
 								<h2
 									style="color: #ffffff !important;"
 									class="letraPrincipal"
@@ -1521,7 +1341,7 @@ import Scripts from "../components/Scripts.astro";
 									</style>
 								</h2>
 							</div>
-							<!-- END MAIN TITLE WRAPPER -->
+					
 						</div>
 					</div>
 					<div class="row">
@@ -1533,9 +1353,9 @@ import Scripts from "../components/Scripts.astro";
 								Puedes confirmar también<br /> vía Whatsapp.
 							</div>
 						</div>
-						<!-- SUSCRIBE FORM OUTER WRAPPER -->
+					
 						<div class="col-lg-10 col-md-offset-1">
-							<!-- END SUSCRIBE FORM INNER WRAPPER -->
+					
 							<a
 								target="_blank"
 								href="https://api.whatsapp.com/send/?phone=1111111&text=Confirmo%20asistencia%20a%20la%20Boda%20de%20Marisa%20y%20Daniel"
@@ -1564,9 +1384,10 @@ import Scripts from "../components/Scripts.astro";
 								</div>
 							</a>
 						</div>
-						<!-- END SUSCRIBE FORM OUTER WRAPER -->
+					
 					</div>
 				</section>
+				 -->
 				<!-- END CONTACTO SECTION -->
 
 				<!-- SECCION GENERICA -->

@@ -36,6 +36,14 @@
 	}
 }
 
+/* Countdown responsive - consistent sizing across all screens */
+#countdown .carousel-caption2 {
+	max-width: 100%;
+	padding: 0 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 
 @font-face {

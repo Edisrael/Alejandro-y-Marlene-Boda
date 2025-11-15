@@ -1498,6 +1498,16 @@ img.logo-white-bg {
 	}
 }
 
+@media (min-width: 1200px) {
+	#countdown .wraper-clock .value {
+		font: normal 30px/40px "Great Vibes";
+		min-width: 75px;
+	}
+	#countdown .wraper-clock .value-label {
+		font: normal 15px/28px "Great Vibes";
+	}
+}
+
 /* ------------------------------------------------ */
 /* 10. Program Of The Day Section
 /* ------------------------------------------------ */

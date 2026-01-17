@@ -57,7 +57,7 @@ Pace.on('done', function () {
   if (!clock) return;
 
   // Fecha objetivo
-  var target = new Date("2026-01-17T15:00:00").getTime();
+  var target = new Date("2026-01-17T17:00:00").getTime();
 
   function render() {
     var now = Date.now();
